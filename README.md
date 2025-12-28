@@ -1,4 +1,3 @@
-# scanard.github.io
 <!DOCTYPE HTML>
 <!--
 	Stellar by HTML5 UP
