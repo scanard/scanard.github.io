@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salle 7</title>
+    <link rel="stylesheet" href="salle7.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Musique -->
+        <audio id="audioPlayer" src="../musique.mp3" preload="auto"></audio>
+        <button id="playButton" class="button">Lire la musique</button>
+
+        <!-- Constant for all-->
+        <input type="text" id="messageInput" placeholder="Entrez le message décrypté">
+        <button id="verifierButton" class="button">Vérifier</button>
+        <img src="../../images utiles/carnet sans fond.png" alt="Description" id="journal">
+        <img src="../../images utiles/indice sans fond.png" alt="Description" id="indice">
+        
+        <!--Journal-->
+        <div id="notebook" class="notebook">
+            <div class="notebook-header">
+                <button id="closeNotebookButton" class="button">Close</button>
+                <div id="sharedKey_pop" class="sharedKey_pop"></div>
+                <div id="publicKey_pop" class="publicKey_pop"></div>
+                <div id="publicKey" class="publicKey"></div>
+                <div id="sharedKey" class="sharedKey"></div>
+                <button id="generateButton1" class="button">Générer</button>
+                <button id="generateButton2" class="button">Générer</button>
+                <div class="background">
+                    <a href="#" class="cesar" onclick="openCesar()"> </a>
+                    <a href="#" class="vigenere" onclick="openVigenere()"></a>
+                    <a href="#" class="hill" onclick="openHill()"> </a>
+                    <a href="#" class="chase" onclick="openChase()"> </a>
+                </div>
+                <div id="cesar_pop" class="cesar_pop"></div>
+                <div id="vigenere_pop" class="vigenere_pop"></div>
+                <div id="hill_pop" class="hill_pop"></div>
+                <div id="chase_pop" class="chase_pop"></div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="timer">
+            <h1 id="timer-display">25:00</h1>
+            <button id="pause-button">Pause Timer</button>
+        </div>
+
+    <!-- Cliquables sur le background-->
+    <div class="background">
+        <a href="#" class="door" onclick="openDoor()"> </a>
+    </div>
+    <div id="currentDialog" class="currentDialog"></div>
+    <!-- Dialogue 1 -->
+    <div id="dialog1" class="dialog">
+        <img src="../../images utiles/kaya.png" alt="Kaya" class="dialog-image">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <p> Agent <span data-variable="agent"> </span> ! Nous avons un problème ! Il vous manque des informations pour avancer dans votre quête. </p>
+            <button class="next-btn">Suivant</button>
+        </div>
+    </div>
+
+    <!-- Dialogue 2 -->
+    <div id="dialog2" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <img src="../../images utiles/kaya.png" alt="Description de l'image 3" class="dialog-image">
+            <p>La compagnie Colaste nous propose un marché, les informations sur le secteur textile en échange de celles qu'il nous manque. Le problème est que notre canal de réseau avec eux n'est pas sécurisé.</p>
+            <button class="next-btn">Suivant</button>
+        </div>
+    </div>
+
+    <!-- Dialogue 3 -->
+    <div id="dialog3" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <img src="../../images utiles/kaya.png" alt="Description de l'image 4" class="dialog-image">
+            <p>Il va falloir que vous échangiez ces dossiers sans que nos concurrents ne puissent les intercepter. Ils ont transmis via ce canal une clé publique à notre intention : p = 37, g = 4, B = 25. </p>
+            <button class="next-btn">Suivant</button>
+        </div>
+    </div>
+
+    <!-- Dialogue 4 -->
+    <div id="dialog4" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <img src="../../images utiles/kaya.png" alt="Description de l'image 5" class="dialog-image">
+            <p>Cherchez dans le carnet et envoyez leur votre clé publique après l'avoir calculée à partir de votre clé privée afin d'établir la connexion.</p>
+            <button class="finish-btn">Fermer</button>
+        </div>
+    </div>
+    
+    <!-- Dialogue 5 -->
+    <div id="dialog5" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <img src="../Carnet/Carnet Diffie-Hellman.png" alt="Description de l'image 6" class="dialog-image-fin">
+            <p>Ca y est ! Vous pouvez échanger des informations de manière sécurisée.</p>
+            <button class="close-all-btn">Terminer</button>
+        </div>
+    </div>
+
+    <script src="salle7.js"></script>
+
+   
+</body>
+</html>
