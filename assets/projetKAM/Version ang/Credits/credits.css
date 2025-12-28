@@ -1,0 +1,28 @@
+/* --- body: CONSTANT FOR ALL --- */
+body {
+  background-color: #545454;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("credits.jpg");
+  background-size: contain; /* auto, contain, cover ou 200px 100px */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.credits {
+  font-family: 'Franklin Gothic Medium';
+  color: white ;
+  width: 400px ;
+  left: 55% ; 
+  top: 120%;
+  font-size: large;
+  text-align: justify;
+}
+
+
+

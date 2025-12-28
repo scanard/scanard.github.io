@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salle 6</title>
+    <link rel="stylesheet" href="salle6.css">
+</head>
+<body>
+    <div class="container">
+
+         <!-- Musique -->
+         <audio id="audioPlayer" src="../musique.mp3" preload="auto"></audio>
+         <button id="playButton" class="button">Lire la musique</button> 
+
+        <!-- Constant for all-->
+        <input type="text" id="messageInput" placeholder="Entrez le message décrypté">
+        <button id="verifierButton" class="button">Vérifier</button>
+        <img src="../../images utiles/carnet sans fond.png" alt="Description" id="journal">
+        <img src="../../images utiles/indice sans fond.png" alt="Description" id="indice">
+        <div id="notebook" class="notebook">
+            <div class="notebook-header">
+                <button id="closeNotebookButton" class="button">Close</button>
+                <div class="background">
+                    <a href="#" class="cesar" onclick="openCesar()"> </a>
+                    <a href="#" class="vigenere" onclick="openVigenere()"></a>
+                    <a href="#" class="hill" onclick="openHill()"> </a>
+                    <a href="#" class="chase" onclick="openChase()"> </a>
+                </div>
+                <div id="cesar_pop" class="cesar_pop"></div>
+                <div id="vigenere_pop" class="vigenere_pop"></div>
+                <div id="hill_pop" class="hill_pop"></div>
+                <div id="chase_pop" class="chase_pop"></div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="timer">
+            <h1 id="timer-display">25:00</h1>
+            <button id="pause-button">Pause Timer</button>
+        </div>
+
+        <!-- Cliquables sur l'image-->
+        <img src="papier_mouillé.jpg" alt="Description" id="postit">
+        <div id="door_pop" class="door_pop"></div>
+        <div id="postit_pop" class="postit_pop">
+            <div class="postit_text"></div>
+        </div>
+        <div id="shelf_pop" class="shelf_pop"></div>
+
+        <div id="hint" class="hint">
+            <button id="useButton" class="button">Oui</button>
+            <button id="dontuseButton" class="button">Non</button>
+        </div>
+
+        <div id="hint_given" class="hint_given">
+            <div id="hintText" class="hintText"></div>
+        </div>
+        
+    </div>
+    <!-- Cliquables sur le background-->
+    <div class="background">
+        <a href="#" class="door" onclick="openDoor()"> </a>
+        <a href="#" class="shelf" onclick="openShelf()"> </a>
+    </div>
+
+    <!-- Dialogue 1 -->
+    <div id="dialog1" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <p>Mince, le code est illisible, il va falloir faire sans...</p>
+            <button class="close-btn">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Dialogue 2 -->
+    <div id="dialog2" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <p>Bien joué <span data-variable="agent"> </span>, vous avez décrypté le code de Cesar !</p>
+            <button class="next-btn">Suivant</button>
+        </div>
+    </div>
+
+    <!-- Dialogue 3 -->
+    <div id="dialog3" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <p>Passez à présent à la salle suivante.</p>
+            <button class="close-all-btn">Terminer</button>
+        </div>
+    </div>
+
+    <script src="salle6.js"></script>
+</body>
+</html>
