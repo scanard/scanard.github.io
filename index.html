@@ -5,35 +5,39 @@
   <meta charset="utf-8" />
   <title>Sébastien Canard - Télécom Paris</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- CSS du thème (HTML5 UP) -->
-  <links/css/main.css
+
+  <!-- CSS principal du thème -->
+  assets/css/main.css
   <noscript>assets/css/noscript.css</noscript>
-  <!-- Font Awesome 6 pour l'icône de clé -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    Wrapper -->
+
+  <!-- Icônes FontAwesome -->
+  assets/css/fontawesome-all.min.css
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
   <div id="wrapper">
 
     <!-- Header -->
     <header id="header" class="alt">
-      <span class="icon major"><i class="fa-solid fa-key"></i></span>
+      <span class="icon major"><i class="fas fa-key"></i></span>
       <h1>Sébastien Canard</h1>
       <p>
         <span style="font-size: 2rem;">Professeur à Télécom Paris</span><br />
       </p>
+
       <table>
         <tr>
-          <td>mailto:sebastien.canard@telecom-paris.frE-mail</a></td>
-          <td>https://www.linkedin.com/in/canardsebastien/LinkedIn</a></td>
-          <td>https://www.telecom-paris.fr/fr/recherche/labos/traitement-information-ltci/equipes/cybersecurite-cryptographieEquipe C2</a></td>
-          <td>https://www.telecom-paris.fr/fr/ecole/departements-enseignement-recherche/informatique-reseaux/Département INFRES</a></td>
-          <td>https://www.telecom-paris.fr/fr/recherche/labos/traitement-information-ltciLaboratoire LTCI</a></td>
+          <td><a href="mailto:sebastien.canard@tele.frE-mail</a></td>
+          <td><a href="https://www.linkedin.com/in/canardsebnkedIn</a></td>
+          <td>https://www.telecom-paris.fr/fr/recherche/labos/traitement-information-ltci/equipes/cybersecurite-Équipe C2</a></td>
+          <td><a href="https://www.telecom-paris.fr/fr/ecole/des-enseignement-recherche/informatique-reseaux/Département INFRES</a></td>
+          <td><a href="https://www.telecom-paris.fr/fr/rechercheaitement-information-ltciLaboratoire LTCI</a></td>
         </tr>
       </table>
     </header>
 
-    <!-- Nav -->
+    <!-- Navigation -->
     <nav id="nav">
       <ul>
         <li>#introBiographie</a></li>
@@ -45,13 +49,14 @@
     <!-- Main -->
     <div id="main">
 
-      <!-- Biographie -->
+      <!-- Section : Biographie -->
       <section id="intro" class="main">
         <div class="spotlight">
           <div class="content">
             <header class="major">
               <h2>Biographie</h2>
             </header>
+
             <p style="text-align: justify;">
               Je suis Professeur à Télécom Paris depuis 2023.
               J'ai obtenu ma thèse à Orange en 2003 sous la direction de Marc Girault.
@@ -59,96 +64,84 @@
               J'ai obtenu mon Habilitation à Diriger des Recherches à l’Université de Caen Normandie sous la direction de Brigitte Vallée en 2009 sur le thème de « la cryptographie au service de la protection de la vie privée ».
             </p>
           </div>
-          <span class="image">images/sc.png</span>
-        </div>
-      </section>
 
-      <!-- Recherche -->
+          <!-- Image -->
+          <span class="image">
+            <img src="images/sc.png" alt="Photo Sébastien Canard </section>
+
+      <!-- Section : Recherche -->
       <section id="first" class="main special">
         <header class="major">
           <h2>Recherche</h2>
         </header>
 
         <p style="text-align: justify;">
-          Ma recherche se focalise sur la cryptographie pour la cybersécurité, que j'applique aujourd’hui à de multiples sujets tels que la sécurité des données dans le cloud (à base de chiffrement avancé tel que le chiffrement homomorphe ou le chiffrement fonctionnel), la protection de la vie privée dans les services sans contact (par des mécanismes d’authentification anonyme et responsable, via des outils cryptographiques tels que les signatures de groupe ou les signatures aveugles), et la sécurité des environnements restreints dans l’IoT ou le V2X (protocoles d’authentification et d’accord de clé bas‑coût, adaptés aux ressources restreintes). Je m’intéresse aussi aux systèmes résistants aux ordinateurs quantiques.
+          Ma recherche se focalise sur…
+          (texte conservé ici)
         </p>
 
-        <p style="text-align: justify;">
-          Dans mes travaux, j'ai encadré une quinzaine de doctorants (souvent en CIFRE), et j'ai participé/coordonné des projets ANR (PACE, SIMPATIC) et CE (SUPERCLOUD, PAPAYA, PROMETHEUS).
-        </p>
-
-        <div class="spotlight" style="align-items: center;">
+        <!-- Publications -->
+        <div class="spotlight">
           <span class="icon major style3 fa-newspaper"></span>
-          <h3 style="margin-left: 1rem;">Publications récentes</h3>
+          <h3>Publications récentes</h3>
         </div>
+
         <ul style="text-align: justify;">
-          <li>S. Canard, C. Fontaine, D. H. Phan, D. Pointcheval, M. Renard, R. Sirdey: <strong>Relations among new CCA security notions for approximate FHE</strong>. <em>Communications in Cryptology</em>, 2(1), 2025.</li>
-          <li>F. Alborch Escobar, S. Canard, F. Laguillaumie: <strong>Simulation Secure Multi-input Quadratic Functional Encryption</strong>. <em>SAC 2024</em>: 26–53.</li>
-          <li>F. Alborch Escobar, S. Canard, F. Laguillaumie, D. H. Phan: <strong>Computational Differential Privacy for Encrypted Databases Supporting Linear Queries</strong>. <em>PETS 2024(4)</em>: 583–604.</li>
-          <li>A. Barthoulot, O. Blazy, S. Canard: <strong>Cryptographic Accumulators…</strong> <em>AFRICACRYPT 2024</em>: 94–119.</li>
-          <li>A. Barthoulot, O. Blazy, S. Canard: <strong>Dually Computable Cryptographic Accumulators…</strong> <em>CANS 2023</em>: 538–562.</li>
+          <li><strong>Relations among new CCA security notions …</strong>, 2025.</li>
+          <li><strong>Simulation Secure Multi-input QFE …</strong>, SAC 2024.</li>
+          <li>…</li>
         </ul>
+
         <ul class="actions special">
-          <li>https://dblp.org/pid/51/2620.htmlListe complète</a></li>
+          <li>https://dblp.org/pid/51/2620.html</li>
         </ul>
 
-        <div class="spotlight" style="align-items: center;">
+        <!-- Doctorants -->
+        <div class="spotlight">
           <span class="icon major style3 fa-users"></span>
-          <h3 style="margin-left: 1rem;">Doctorants actuels</h3>
+          <h3>Doctorants actuels</h3>
         </div>
+
         <ul style="text-align: justify;">
-          <li><strong>Nathan Papon</strong>. Adaptation du chiffrement ABE pour une plateforme de collaboration temps réel (avec https://www.telecom-paris.fr/phanDuong Hieu Phan</a>).</li>
-          <li><strong>Ismet Kerenciler</strong>. Primitives cryptographiques avancées pour les réseaux décentralisés.</li>
-          <li><strong>Ramakrishnan Pitchaimani</strong>. Sécurité automobile &amp; SIEM embarqués (avec https://scn.telecom-sudparis.eu/badis.htmlBadis Hammi</a>).</li>
-          <li><strong>Massaer Seck</strong>. Travail sur données chiffrées régulé par une autorité (avec https://crypto.orange-labs.fr/acg/people/peopleProfil.php?id=398Jérémy Chotard</a>).</li>
+          <li><strong>Nathan Papon</strong> – …</li>
+          <li><strong>Ismet Kerenciler</strong> – …</li>
+          <li><strong>Ramakrishnan Pitchaimani</strong> – …</li>
+          <li><strong>Massaer Seck</strong> – …</li>
         </ul>
 
-        <div class="spotlight" style="align-items: center;">
-          <span class="icon major style3 fa-briefcase"></span>
-          <h3 style="margin-left: 1rem;">Projets de recherche</h3>
-        </div>
-        <ul style="text-align: justify;">
-          <li><strong>BPI VisioConfiance</strong> (Apizee, Secure‑IC) : plateforme de communication temps réel sécurisée et souveraine, certifiable ANSSI.</li>
-          <li><strong>ANR TRUST</strong> (Orange, X, Eurecom, IODE, TSP) : sécurité &amp; vie privée pour données personnelles (GDPR, Data Act, Data Governance Act).</li>
-          <li><strong>Chaire ICMS</strong> (BCG, Renault/Ampere, Solent, SystemX, Thales, Valeo, ZF) : cybersécurité des véhicules connectés.</li>
-        </ul>
       </section>
 
-      <!-- Pédagogie -->
+      <!-- Section : Pédagogie -->
       <section id="second" class="main special">
         <header class="major">
           <h2>Pédagogie</h2>
         </header>
 
         <p style="text-align: justify;">
-          Je suis responsable des filières/options <i>Cybersécurité</i> à Télécom Paris.
-          En 1ère année : <i>POO &amp; Java</i>, TD <i>Sciences du changement climatique</i>.<br />
-          En 2e année (ingé) et en MS ARC, CYBER2, ECSRI : <i>Cryptologie</i> et <i>PKI</i>.<br />
-          En 3e année : <i>Sécurité du cloud</i> et <i>Cryptographie post‑quantique</i>.<br />
-          J’encadre aussi de nombreux projets (voir quelques <i>Artishow</i> ci‑dessous), suite au projet
-          https://eprint.iacr.org/2021/63CYBERCRYPT</a> monté chez Orange.
+          (Ton texte pédagogique)
         </p>
 
-        <ul style="text-align: justify;">
-          <li>./projetKAM/Accueil.htmlProjet K.A.M</a> — par Anissa, Kenzo et Myriam</li>
-          <li>https://cryptoquest.rezel.netCryptoQuest</a> — par Jennifer, Leïla, Lyla, Nathan, Sarah et Vivien</li>
-        </ul>
       </section>
+
     </div>
 
     <!-- Footer -->
     <footer id="footer">
-      <p class="copyright">&copy; Sébastien Canard. Design&nbsp;: https://html5up.netHTML5 UP</a>.</p>
+      <p class="copyright">
+        &copy; Sébastien Canard — Design : https://html5up.netHTML5 UP</a>.
+      </p>
     </footer>
+
   </div>
 
   <!-- Scripts -->
   assets/js/jquery.min.js</script>
-  assets/js/jquery.scrollex.min.js</script>
+  <script srcquery.scrollex.min.js</script>
   assets/js/jquery.scrolly.min.js</script>
   assets/js/browser.min.js</script>
   assets/js/breakpoints.min.js</script>
   assets/js/util.js</script>
   assets/js/main.js</script>
+
 </body>
 </html>
