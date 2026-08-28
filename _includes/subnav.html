@@ -1,0 +1,42 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% if page.section == "research" %}
+  {% if page.lang == "en" %}
+    {% assign overview_url = "/en/research/" %}
+    {% assign students_url = "/en/research/students/" %}
+    {% assign publications_url = "/en/research/publications/" %}
+    {% assign projects_url = "/en/research/projects/" %}
+    {% assign misc_url = "/en/research/misc/" %}
+  {% else %}
+    {% assign overview_url = "/recherche/" %}
+    {% assign students_url = "/recherche/doctorants/" %}
+    {% assign publications_url = "/recherche/publications/" %}
+    {% assign projects_url = "/recherche/projets/" %}
+    {% assign misc_url = "/recherche/divers/" %}
+  {% endif %}
+  <nav class="subnav">
+    <div class="wrap subnav-inner">
+      <a href="{{ overview_url | relative_url }}" {% if page.subnav == "overview" %}class="active"{% endif %}>{{ t.research.tabs.overview }}</a>
+      <a href="{{ students_url | relative_url }}" {% if page.subnav == "students" %}class="active"{% endif %}>{{ t.research.tabs.students }}</a>
+      <a href="{{ publications_url | relative_url }}" {% if page.subnav == "publications" %}class="active"{% endif %}>{{ t.research.tabs.publications }}</a>
+      <a href="{{ projects_url | relative_url }}" {% if page.subnav == "projects" %}class="active"{% endif %}>{{ t.research.tabs.projects }}</a>
+      <a href="{{ misc_url | relative_url }}" {% if page.subnav == "misc" %}class="active"{% endif %}>{{ t.research.tabs.misc }}</a>
+    </div>
+  </nav>
+{% elsif page.section == "teaching" %}
+  {% if page.lang == "en" %}
+    {% assign overview_url = "/en/teaching/" %}
+    {% assign courses_url = "/en/teaching/courses/" %}
+    {% assign projects_url = "/en/teaching/projects/" %}
+  {% else %}
+    {% assign overview_url = "/enseignement/" %}
+    {% assign courses_url = "/enseignement/cours/" %}
+    {% assign projects_url = "/enseignement/projets/" %}
+  {% endif %}
+  <nav class="subnav">
+    <div class="wrap subnav-inner">
+      <a href="{{ overview_url | relative_url }}" {% if page.subnav == "overview" %}class="active"{% endif %}>{{ t.teaching.tabs.overview }}</a>
+      <a href="{{ courses_url | relative_url }}" {% if page.subnav == "courses" %}class="active"{% endif %}>{{ t.teaching.tabs.courses }}</a>
+      <a href="{{ projects_url | relative_url }}" {% if page.subnav == "projects" %}class="active"{% endif %}>{{ t.teaching.tabs.projects }}</a>
+    </div>
+  </nav>
+{% endif %}

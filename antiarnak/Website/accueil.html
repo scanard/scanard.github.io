@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="accueil.css">
+    <title>Arnaques Internet - Bonnes pratiques</title>
+    <link rel="icon" type="image/x-icon" href="images/tp_logo.png">
+    <div id="pageTitle">Scénarios d'arnaques Internet, et bonnes pratiques</div>
+</head>
+<html>
+    <body>
+        <br>
+        <div id="h1">
+            <div id="lore">
+                <div id="overlore">
+                    <h1 class="titel">Historique</h1><br>
+                    Les arnaques en ligne sont un problème aussi vieux qu'Internet lui-même. Avec le temps, elles ont évolué pour s'adapter au monde moderne, mais leur
+                    but n'a pas changé : voler des données personelles à des victimes (coordonnées bancaires, identités...) dans le but de gagner de l'argent.
+                    Avec le temps, des méthodes ont été trouvées pour lutter contre ces arnaques (Voir la section "Détails des arnaques" pour une liste plus exhaustive).<br>
+                    La timeline ci-dessous (datant de 2021) retrace les principales avancées dans le monde des arnaques en ligne :<br>
+                    <img src="images/timeline.png" style="width: 30%; position: relative; left: 35%">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="h2">
+            <h1 class="titel">Quelques chiffres (2025)</h1>
+            <p>
+                <img id="stats" src="images/stats_1.webp">
+                <img id="stats" src="images/stats_2.webp">
+                <div>
+                    Autres chiffres en vrac :<br>
+                        * Les arnaques à l'usurpation du numéro de téléphone ont été multipliées par 6 entre 2024 et 2025<br>
+                        * Les arnaques aux faux sites web ont augmenté de +170%<br>
+                        * Le cyberharcèlement a globalement augmenté de +138%, avec un pic à +200% pour les collectivités et entreprises<br>
+                </div>
+            </p>
+        </div>
+        <br>
+
+        <div id="h3">
+            <h1 class="titel">Défintions utiles</h1>
+            <div>
+                <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect id="defRect" x="5"  y="0" width="90" height="32" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="27"  y="4" textLength="46" font-size="5" fill="#220000" style="text-decoration: bold;">Hameçonnage (phishing)</text>
+                        <text x="7"  y="15" textLength="86" font-size="5" fill="black">Technique utilisée par des fraudeurs pour</text>
+                        <text x="7"  y="21" textLength="86" font-size="5" fill="black">obtenir des renseignements personnels dans</text>
+                        <text x="7"  y="27" textLength="70" font-size="5" fill="black">dans le but d'usurper une identité.</text>
+                    </g>
+                    <g>
+                        <rect id="defRect" x="105"  y="0" width="90" height="26" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="124"  y="4" textLength="52" font-size="5" fill="#220000" style="text-decoration: bold;">Rançongiciel (ransomware)</text>
+                        <text x="107"  y="15" textLength="80" font-size="5" fill="black">Logiciel malveillant qui prend en otage</text>
+                        <text x="107"  y="21" textLength="50" font-size="5" fill="black">des données personnelles.</text>
+                    </g>
+                    <g>
+                        <rect id="defRect" x="205"  y="0" width="90" height="26" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="224"  y="4" textLength="52" font-size="5" fill="#220000" style="text-decoration: bold;">Cheval de Troie (Trojan horse)</text>
+                        <text x="207"  y="15" textLength="80" font-size="5" fill="black">Logiciel en apparence légitime, mais qui</text>
+                        <text x="207"  y="21" textLength="80" font-size="5" fill="black">contient une fonctionnalité malveillante.</text>
+                    </g>
+                    <g>
+                        <rect id="defRect" x="5"  y="42" width="90" height="44" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="27"  y="46" textLength="46" font-size="5" fill="#220000" style="text-decoration: bold;">Alarmiciel (scareware)</text>
+                        <text x="7"  y="57" textLength="86" font-size="5" fill="black">Logiciel malveillant qui utilise l'ingénierie</text>
+                        <text x="7"  y="63" textLength="86" font-size="5" fill="black">sociale pour provoquer le choc, l'anxiété ou</text>
+                        <text x="7"  y="69" textLength="86" font-size="5" fill="black">la perception d'une menace afin de pousser</text>
+                        <text x="7"  y="75" textLength="86" font-size="5" fill="black">les utilisateurs à acheter des logiciels</text>
+                        <text x="7"  y="81" textLength="30" font-size="5" fill="black">indésirables.</text>
+                    </g>
+                    <g>
+                        <rect id="defRect" x="105"  y="36" width="90" height="50" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="123"  y="40" textLength="54" font-size="5" fill="#220000" style="text-decoration: bold;">Attaque de l'homme du milieu</text>
+                        <text x="125"  y="46" textLength="50" font-size="5" fill="#220000" style="text-decoration: bold;">(man-in-the-middle attack)</text>
+                        <text x="107"  y="57" textLength="80" font-size="5" fill="black">Attaque ayant pour but d'intercepter les</text>
+                        <text x="107"  y="63" textLength="80" font-size="5" fill="black">communications entre deux parties, sans</text>
+                        <text x="107"  y="69" textLength="80" font-size="5" fill="black">que ni l'une ni l'autre ne puisse se douter</text>
+                        <text x="107"  y="75" textLength="80" font-size="5" fill="black">que le canal de communication entre elles</text>
+                        <text x="107"  y="81" textLength="32" font-size="5" fill="black">a été détourné.</text>
+                    </g>
+                    <g>
+                        <rect id="defRect" x="205"  y="36" width="90" height="32" rx="5" ry="5" style="fill: #884444; opacity:0.5" />
+                        <text x="209"  y="40" textLength="82" font-size="5" fill="#220000" style="text-decoration: bold;">"Être compromis (par un logiciel malveillant)"</text>
+                        <text x="237"  y="46" textLength="26" font-size="5" fill="#220000" style="text-decoration: bold;">(To be pwned)</text>
+                        <text x="207"  y="57" textLength="74" font-size="5" fill="black">Être victime d'une fuite de données, ou se</text>
+                        <text x="207"  y="63" textLength="86" font-size="5" fill="black">faire contrôler par un tiers sans consentement.</text>
+                    </g>
+                </svg>
+                 <br>
+            </div>
+        </div>
+        <br>
+
+        <div id="h4">
+            <h1 id="det_arnak" class="titel">Détails des arnaques</h1>
+            <br>
+            <a href="fishing.html"><button id="buttonF"> Phishing </button></a>
+            <a href="usurpation.html"><button id="buttonU"> Usurpation d'identité </button></a>
+            <a href="fake_news.html"><button id="buttonM"> Fake News </button></a>
+            <a href="arnaques_sitesweb.html"><button id="buttonS"> Faux sites Internet </button></a>
+            <br>
+        </div>
+        <br>
+
+        <div id="h4">
+            <h1 id="titel">Un exemple de témoignage</h1>
+            C'est l'histoire d'une personne (Mme A) qui utilisait son ordinateur personnel et qui a cliqué sur un lien. Cela a affiché sur son ordinateur une page web lui expliquant que son ordinateur était infecté et qu'elle devait urgemment appeler un numéro s'affichant sur l'écran pour résoudre le problème.<br>
+            Elle a appelé et s'est trouvé en communication avec une personne (M. B), à qui elle a expliqué son problème, et qui lui a confirmé que son ordinateur était bien infecté. M. B lui a alors demandé de faire un virement, via PayPal, pour qu'il puisse intervenir sur l'ordinateur. Comme Mme A n'avait pas PayPal, M. B lui a proposé de l'aider à créer un compte, mais elle n'y arrivait pas.<br>
+            Il lui a alors proposé de prendre la main sur son téléphone, afin de faire la manipulation lui-même. Mme A a accepté, et M. B a ainsi pu créer le compte (en connaissant le mot de passe). Il a ensuite fallu associer le compte PayPal au compte bancaire de Mme A, ce que cette dernière pouvait faire depuis son téléphone, qui était toujours sous le contrôle de M. B.<br>
+            Ce dernier a ainsi pu voir les codes d'accès de Mme A sur ledit compte bancaire, et faire l'association avec le compte PayPal.<br>
+            Finalement, la banque de Mme A s'est aperçu d'un comportement étrange de leur cliente, et ont décidé de l'appeler pour vérifier. Heureusement, Mme A avait mit dans ses contacts le numéro de son agence bancaire. Elle a vu le nom de sa banque s'afficher sur son téléphone et a répondu, ce qui lui a permis de se détacher du hacker, qui a raccroché.<br>
+            Mme A a mis un peu de temps à retrouver son calme. Il lui a aussi fallu supprimer le compte PayPal, et changer ses codes… Son ordinateur n'était pas du tout vérolé.<br>
+        </div>
+        <br>
+
+        <div id="h5">
+            <div id="after_arn">
+                <h1 class="titel">Liens utiles</h1>
+                <p>
+                    <a href="https://www.shutterstock.com/fr/image-vector/email-phishing-spoofing-fishing-hook-catching-2394789359?trackingId=ddfcb9aa-aabb-4e02-a6e0-17273c00d7d5&listId=searchResults"> Site du ministère de l'Intérieur sur le phishing </a>
+                    <br>
+                    <a href="https://www.economie.gouv.fr/particuliers/numerique-et-cybersecurite/usurpation-didentite-comment-sen-proteger"> Site du ministère de l'Économie sur l'usurpation d'identité </a>
+                    <br>
+                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/N31138">Que faire si vous vous êtes fait avoir ?</a>
+                </p>
+                <br>
+
+                <h1 class="titel">Crédits</h1>
+                <p>
+                    <i>Développement du site web</i> : Alexandre, Héloïse, Rémi, Arsène<br>
+                    <i>Jeu interactif Cellphone</i> : Rémi, Héloïse, Alexandre, Octave<br>
+                    <i>Campagne de phishing</i> : Arsène, Octave<br>
+                    <i>Hébergement</i> : Arsène<br>
+                    <i>Encadrement</i> : Sébastien Canard<br>
+                </p>
+
+                <h1 class="titel">Sources</h1>
+                <p>
+                    Statistiques : <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/rapport-activite-2025">cybermalveillance.gouv.fr</a><br>   
+                </p>
+            </div>
+        </div>
+    </body>
+</html> 
+
+<!-- azertyuiop1234567890AZERTYIOP&& -->

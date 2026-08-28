@@ -1,0 +1,53 @@
+button {
+    width: 28%;
+    height: 200px;
+    background-color: #888888;
+    font-size: 2vw;
+}
+
+#title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+#s1 {
+    position: absolute;
+    left: 4%;
+    width: 100%;
+}
+
+#s2 {
+    position: absolute;
+    left: 36%;
+    width: 100%;
+}
+
+#s3 {
+    position: absolute;
+    left: 68%;
+    width: 100%;
+}
+
+#b1:hover {
+    background: url("Website/images/thumbnail-index.png");
+    background-size: 100% 100%;
+    background-color: #aaaaaa;
+    color: #004400;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+}
+
+#b2:hover {
+    background: url("Website/images/Cellphone_.png");
+    background-size: 100%;
+    background-color: #aaaaaa;
+    color: #ffffff;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+}
+
+#b3:hover {
+    background: url("Website/images/Campagne_.png");
+    background-size: 100%;
+    background-color: #aaaaaa;
+    color: #004400;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+}

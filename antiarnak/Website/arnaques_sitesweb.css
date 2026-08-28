@@ -1,0 +1,105 @@
+body {
+    background-color: #222266;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: #09093f;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #880000;
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+#return {
+    width: 100px;
+    filter: invert(0.5)
+}
+
+h2 {
+    background-color: #39397f;
+    text-align: center;
+    border-color: #05053d;
+    border-width: 4px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+#gdiv {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    background-color: #1f1f5d;
+    border-color: #111111;
+    border-width: 6px;
+    border-radius: 100px;
+    border-style: solid;
+    text-align: center;
+}
+
+#gaming {
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+#main {
+    background-color: #222266;
+    color: white;
+    opacity: 0.98;
+}
+
+#scheme {
+    position: relative;
+    width: 40%;
+    left: 30%;
+}
+
+.dodont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    width: 100%;
+    text-align: center;
+    background-color: #3333ff;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #0000aa;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.doDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #44bb44;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: green;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.dontDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #bb3333;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #aa0000;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.doLi{
+    text-align: left;
+}
+
+.dontLi{
+    text-align: left;
+}

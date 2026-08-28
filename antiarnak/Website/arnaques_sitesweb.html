@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="arnaques_sitesweb.css">
+    <link rel="icon" type="image/x-icon" href="images/tp_logo.png">
+    <title>Faux sites web</title>
+    <div id="pageTitle">Faux sites web et bonnes pratiques</div>
+</head>
+<html>
+    <body>
+        <div id="h00">
+            <div>
+                <br>
+                <a id=return href="accueil.html">
+                    <img id=return src="images/go_home_hollow.svg"><br>
+                </a>
+
+                <div id="gdiv">
+                    <a id=gaming href="faux_sites/fsw_game.html">
+                        <img id=gaming src="images/vrai_fauw.webp"><br>
+                        Mini-jeu d'introduction<br>Reconnaissance de faux sites web
+                    </a>
+                </div><br>
+            </div>
+        </div>
+        <br>
+        <div id="main">
+            Les faux sites web sont une technique relativement courante dans le monde des arnaques en ligne. Leur but est simple : imiter aussi fidèlement
+            que possible un site connu (par exemple, un site officiel d'une banque ou d'un supermarché) pour dérober des informations personelles
+            (carte bleue, mot de passe...).<br>
+            Le fonctionnement général est présenté sur les schémas ci-dessous :<br>
+            À noter que le lien vers un site web frauduleux peut aussi être envoyé par les réseaux sociaux (ou toute autre forme de communication).
+        </div>
+        <br>
+        <img id="scheme" src="images/fsw_scheme.jpg"><br><br>
+        <div id="main">
+            Comme vous avez pu le voir dans le mini-jeu introductif, certaines de ces fausses pages web peuvent être difficile à détecter. Cependant, des critères
+            existent pour les reconnaître :
+        </div>
+        <br>
+        <div id="main">
+            <h2>1. Analyser l'URL du site</h2>
+            La plupart des sites frauduleux ont une URL (le truc qui commence souvent par <code>https://</code>) présentant des défauts. Par exemple, un
+            début d'adresse en <code>http://</code> au lieu de <code>https://</code> doit vous alerter : le <code>s</code> voulant ici dire "sécurisé". Une
+            adresse en <code>http://</code> n'est donc pas une adresse sécurisée.<br>
+            De manière générale, examinez soigneusement l'URL de n'importe quel site qui vous semble frauduleux : un <code>l</code> à la place d'un <code>1</code> 
+            ou d'un <code>I</code>, un nom de domaine suspect comme <code>paypal-secure-login</code> (le truc avant le <code>.com</code> ou le <code>.fr</code>),
+            une extension inhabituelle (du type <code>.top</code> ou <code>.shop</code>), etc.
+        </div>
+        <br>
+        <div id="main">
+            <h2>2. Inspecter l'URL avec un outil externe</h2>
+            Pour compléter l'analyse précédente, il existe en ligne une myriade d'outils permettant de vérifier la fiabilité des URL. Entrez simplement l'adresse dans le site, et un
+            indicateur vous informe de sa fiabilité (par exemple, on peut citer <a href="https://www.virustotal.com/gui/home/url" style="color: #ffffff">VirusTotal</a>).
+        </div>
+        <br>
+        <div id="main">
+            <h2>3. Regarder directement la page web</h2>
+            Certaines fausses pages web contiennent des indices plus ou moins évidents qui les trahissent : un logo pas totalement centré, des arrondis à n'en plus finir
+            (souvent un signe que la page a été faite par une IA), des fautes d'orthographe et/ou de grammaire, des prix suspicieusement bas par rapport à la moyenne
+            (ce qui vous pousse à agir instinctivement sans trop poser de questions), un domaine créé récemment (vous pouvez utiliser des sites comme
+            <a href="https://www.duplichecker.com/domain-age-checker.php" style="color: #ffffff">Duplichecker</a> pour évaluer l'âge d'une page 
+            web)...<br>
+            L'exemple ci-dessous met en évidence quelques-uns de ces critères (on peut aussi noter la formulation étrange des descriptions ou l'organisation
+            de la page) : 
+        </div>
+        <br><img id="scheme" src="images/fsw_crit.jpg"><br><br>
+        <div id="main">
+            <h1 class="dodont"> DO/DON'T </h1>
+            <div class="do_dont_container">
+                <div class="doDiv"> <b>DO</b>
+                    <ul class="doLi">
+                        <li> Vérifier l'URL pour essayer de détecter des anomalies </li>
+                        <li> Inspecter le site, notamment l'orthographe et l'agencement </li> 
+                        <li> Vérifier les certificats (en cliquant sur le cadenas à gauche de l'URL) </li>
+                        <li> Utiliser des outils de vérification de sites </li>
+                        <li> Signaler tout site suspect (à vos proches, mais pas seulement) </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="dontDiv"> <b>DON'T</b>
+                    <ul class="dontLi">
+                        <li> Ne pas acheter sans réfléchir (surtout si promotion importante) </li>
+                        <li> Ne pas partager des faux sites à ses proches </li>
+                        <li> Si malgré tout, vous vous êtes fait avoir, ne pas attendre et faire les démarches le plus vite possible </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <h2>Sources</h2>
+            Schéma : <a href="https://www.insyncom.fr/actualite/protection-des-mails-menaces-impacts-et-solutions-de-securite" style="color: #ffffff">insyncom.fr</a>
+        </div><br>
+    </body>
+</html>

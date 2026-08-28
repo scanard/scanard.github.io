@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Plus bas -->
+    <title>Gloire aux Artichauts</title>
+    <link rel="icon" href="/cryptoquest/jeu-chapitres/Certificat/dossier2/Artichaut.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            background-color: rgba(255,255,255,0.5);
+            padding : 1vw;
+            border-radius: 1vw;
+        }
+        p {
+            color: #333;
+            font-size: 2vw;
+            background-color: rgba(255,255,255,0.5);
+            padding-left : 20vw;
+            padding-right : 20vw;
+            border-radius: 1vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .artichaut img {
+            width : 35%;
+            height : auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .artichaut a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCORE Plus bas -->
+<h1>GLOIRE AUX ARTICHAUTS</h1>
+
+<div class="artichaut">
+    <img src="/cryptoquest/jeu-chapitres/Certificat/dossier2/Artichaut.png" alt="Artichaut">
+    <p>Les artichauts sont vraiment merveilleux. Leur goût unique et leur texture délicate en font un aliment incontournable. Pour en savoir plus sur les différents types d'artichauts et leurs bienfaits, consultez <a href="https://fr.wikipedia.org/wiki/Artichaut">Wikipédia</a>.</p>
+<!-- MOT DE PASSE : 5FruitsEtLegumes -->
+</div>
+</body>
+<script>
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+    console.log(getRandomInt(255));
+    document.body.style.backgroundColor = ["rgb(",getRandomInt(255),",",getRandomInt(255),",",getRandomInt(255),")"].join("");
+</script>
+</html>

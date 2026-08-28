@@ -1,0 +1,90 @@
+# status: current | past
+#
+# Projets actuels : name, partners/partners_en, description_fr/description_en.
+#
+# Anciens projets (status: past), champs supplémentaires optionnels :
+#   - role_fr / role_en : ton rôle dans le projet (ex: "Initiateur du projet")
+#   - period             : ex: "2019–2023"
+#   - budget             : ex: "750 k€"
+#   - url                : site du projet (laisser "" si aucun)
+
+- name: "BPI VisioConfiance"
+  status: current
+  partners: "avec Apizee et Secure-IC"
+  partners_en: "with Apizee and Secure-IC"
+  description_fr: "Fournir une plateforme de communication temps réel, sécurisée et souveraine, certifiée par l'ANSSI, en développant des briques de sécurisation innovantes."
+  description_en: "Provide a secure, sovereign, ANSSI-certified real-time communication platform by developing innovative security building blocks."
+
+- name: "ANR TRUST"
+  status: current
+  partners: "avec Orange, École Polytechnique, Eurecom, IODE, Télécom SudParis"
+  partners_en: "with Orange, École Polytechnique, Eurecom, IODE, Télécom SudParis"
+  description_fr: "Mettre en œuvre diverses mesures de sécurité et de préservation de la vie privée pour protéger les données personnelles afin de se conformer à des réglementations telles que le RGPD, ainsi qu'à des législations à venir telles que le Data Act et le Data Governance Act."
+  description_en: "Implement security and privacy-preserving measures to protect personal data in compliance with regulations such as the GDPR, as well as upcoming legislation such as the Data Act and the Data Governance Act."
+
+- name: "Chaire ICMS"
+  status: current
+  partners: "avec BCG, Renault/Ampere, Solent, SystemX, Thales, Valeo, ZF"
+  partners_en: "with BCG, Renault/Ampere, Solent, SystemX, Thales, Valeo, ZF"
+  description_fr: "Créer une plateforme solide pour la recherche et l'innovation dans le domaine de la cybersécurité des véhicules connectés, en alignant la recherche universitaire de pointe sur les besoins immédiats et à long terme des industries de l'automobile et de la mobilité."
+  description_en: "Build a strong platform for research and innovation in connected-vehicle cybersecurity, aligning cutting-edge academic research with the immediate and long-term needs of the automotive and mobility industries."
+
+- name: "ANR PRESTO"
+  status: past
+  role_fr: "Initiateur du projet"
+  role_en: "Initiator of the project"
+  period: "2019–2023"
+  budget: "750 k€"
+  url: "https://crypto.di.ens.fr/projects:presto:main"
+  description_fr: "Sur le traitement de flux chiffrés dans la cybersécurité. Ce projet est issu de mes premiers travaux sur la détection d'intrusion sur trafic chiffré. Il est monté sur un mode pluridisciplinaire en mélangeant des experts en cybersécurité et en cryptographie."
+  description_en: "On the processing of encrypted traffic for cybersecurity. This project grew out of my early work on intrusion detection over encrypted traffic, bringing together cybersecurity and cryptography experts in an interdisciplinary approach."
+
+- name: "H2020 PROMETHEUS"
+  status: past
+  role_fr: "Initiateur (avec l'ENS Lyon) et leader technique"
+  role_en: "Initiator (with ENS Lyon) and technical leader"
+  period: "2018–2022"
+  budget: "5,5 M€"
+  url: "https://www.h2020prometheus.eu/"
+  description_fr: "Sur les mécanismes cryptographiques post-quantiques basiques (signature et chiffrement) et pour la protection de la vie privée. À la soumission, les experts de la Commission Européenne nous ont attribué la note très rare de 15/15. Trois des quatre futurs standards de cryptographie post-quantique du NIST ont été soumis par des partenaires du projet. J'ai géré l'ensemble des contributions et des livrables techniques du projet, sur toute la chaîne : fondation de la cryptographie basée sur les réseaux euclidiens, primitives cryptographiques de base, protocoles avancés et cas d'usage."
+  description_en: "On core post-quantum cryptographic mechanisms (signature and encryption) and on privacy protection. At submission, European Commission experts gave the proposal the very rare score of 15/15. Three of the four future NIST post-quantum cryptography standards were submitted by project partners. I managed all technical contributions and deliverables across the full chain: foundations of lattice-based cryptography, core cryptographic primitives, advanced protocols and use cases."
+
+- name: "H2020 PAPAYA"
+  status: past
+  role_fr: "Cocréateur et responsable technique Orange"
+  role_en: "Co-creator and Orange technical lead"
+  period: "2018–2021"
+  budget: "3,7 M€"
+  url: "https://www.papaya-project.eu/"
+  description_fr: "Sur l'apprentissage machine respectueux de la vie privée. Ce projet avait pour objectif de mélanger les disciplines à partir d'un consortium incluant sociologues, juristes, experts de l'IA, cryptographes et fournisseurs de services."
+  description_en: "On privacy-preserving machine learning. The project aimed to bring together multiple disciplines through a consortium including sociologists, legal experts, AI specialists, cryptographers and service providers."
+
+- name: "H2020 SUPERCLOUD"
+  status: past
+  role_fr: "Cocréateur"
+  role_en: "Co-creator"
+  period: "2015–2018"
+  budget: "6,8 M€"
+  url: "https://supercloud-project.technikon.com/"
+  description_fr: "Sur la sécurité dans le cloud. Ce projet a été monté avec deux collègues d'Orange dans le but d'associer des compétences en virtualisation, en techniques de chiffrement et en cybersécurité. J'ai géré des tâches et des livrables, et j'ai été le support du leader technique Orange."
+  description_en: "On cloud security. The project was set up with two Orange colleagues to bring together expertise in virtualization, encryption techniques and cybersecurity. I managed tasks and deliverables, and supported the Orange technical leader."
+
+- name: "ANR SIMPATIC"
+  status: past
+  role_fr: "Montage et pilotage du projet"
+  role_en: "Set-up and coordination of the project"
+  period: "2013–2016"
+  budget: "3 M€"
+  url: ""
+  description_fr: "Sur l'implémentation d'une brique de sécurité dans les cartes à puce et cartes SIM. Ce projet allait des couches les plus basses (implémentation matérielle et mathématiques sur les couplages) aux cas d'usage, en passant par l'algorithmique et la cryptographie."
+  description_en: "On implementing a security building block for smart cards and SIM cards. The project spanned everything from the lowest layers (hardware implementation and pairing-based mathematics) to use cases, including algorithmics and cryptography."
+
+- name: "ANR PACE"
+  status: past
+  role_fr: "Montage et pilotage du projet"
+  role_en: "Set-up and coordination of the project"
+  period: "2008–2012"
+  budget: "2 M€"
+  url: ""
+  description_fr: "Sur la sécurité et la protection de la vie privée dans les paiements sans contact. Il s'est notamment focalisé sur la monnaie électronique anonyme, pour laquelle nous avons obtenu de nombreux résultats."
+  description_en: "On security and privacy in contactless payments. The project focused in particular on anonymous electronic cash, for which we obtained numerous results."

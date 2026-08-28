@@ -1,0 +1,76 @@
+# Un cours par bloc. "level" est un tag court (3A, 2A, 1A, MS ARC...) utilisé pour regrouper les cours.
+# "category_fr"/"category_en" regroupe les cours par section sur la page (ex: "Cycle ingénieur").
+# "url" est optionnel : fiche du cours sur Synapses (catalogue des enseignements de Télécom Paris).
+# "note_fr"/"note_en" est optionnel (ex: "chargé de TD").
+
+- name_fr: "Quantique : architecture, programmation et cryptographie"
+  name_en: "Quantum: architecture, programming and cryptography"
+  level: "3A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/11156/CSC-5CS05-TP-quantique-architecture-programmation-et-cryptographie"
+
+- name_fr: "Sécurité des données dans le cloud"
+  name_en: "Cloud data security"
+  level: "3A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/22016/CSC-5CS07-TP-securite-des-donnees-dans-le-cloud"
+
+- name_fr: "Projets PRIM et intégrateurs"
+  name_en: "PRIM and integrator projects"
+  level: "3A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/27896/PRJ-5CS80-TP-projet-de-recherche-et-d-innovation-master-prim-de-l-option-cybersecurite"
+
+- name_fr: "Cryptologie"
+  name_en: "Cryptology"
+  level: "2A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/2071/CSC-4CS02-TP-cryptologie"
+
+- name_fr: "Analyse de risque et projet de remédiation"
+  name_en: "Risk analysis and remediation project"
+  level: "2A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/2077/CSC-4CS08-TP-analyse-de-risque-et-projet-de-remediation"
+
+- name_fr: "Sécurité des systèmes numériques"
+  name_en: "Digital systems security"
+  level: "2A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/30544/CSC-4TC30-TP-securite-des-systemes-numeriques"
+
+- name_fr: "Sciences des transitions environnementales"
+  name_en: "Environmental transition sciences"
+  level: "1A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  note_fr: "chargé de TD"
+  note_en: "teaching assistant"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/17236/CCH-3TC70-TP-sciences-des-transitions-environnementales"
+
+- name_fr: "Programmation orientée objet, Java"
+  name_en: "Object-oriented programming, Java"
+  level: "1A"
+  category_fr: "Cycle ingénieur"
+  category_en: "Engineering program"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/22110/CSC-3TC36-TP-programmation-orientee-objet-en-java-optionnel"
+
+- name_fr: "Techniques de chiffrement"
+  name_en: "Encryption techniques"
+  level: "MS ARC"
+  category_fr: "Masters spécialisés"
+  category_en: "Specialized Master's programs"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/15171/ARC721-4-technique-de-chiffrement"
+
+- name_fr: "Rôle de la PKI"
+  name_en: "Role of PKI"
+  level: "MS ARC"
+  category_fr: "Masters spécialisés"
+  category_en: "Specialized Master's programs"
+  url: "https://synapses.telecom-paris.fr/catalogue/2026-2027/ue/15288/ARC721-5-role-de-l-infrastructure-de-gestion-des-cles-pki"

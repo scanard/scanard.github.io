@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Browser-letter-spacing: 0.2rem;
+    --nav-h-font:"Browser";
+  }
+
+@font-face {
+    font-family: "Halo";
+    src: url(fonts/halo/Halo.ttf);
+  }
+
+@font-face {
+    font-family: "Halo_outline";
+    src: url(fonts/halo/Halo\ Outline.ttf);
+  }
+
+@font-face {
+    font-family: "Browser";
+    src: url(fonts/browser/Browser.ttf);
+  }
+
+@font-face {
+    font-family: "Browser_italic";
+    src: url(fonts/browser/Browser-Italic.ttf);
+    font-style: italic;
+  }
+@font-face {
+    font-family: "InvisibleKiller";
+    src: url(fonts/invisibleKiller/invisibl.ttf);
+}
+
+body {
+    background-color: #2E5077;
+    background-image: url(img/fond_ecran.jpg);
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #4DCCBD;
+    font-size: 1rem;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* h1 correspond surtout au titre "Jeu web d'introduction à la cryptographie"*/
+h1 {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 6vw;  /* Taille du texte en fonction de la largeur de l'écran */
+    color: #080808;
+    text-align: center; /* Centrer le texte */
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+header {
+    background-color:#213a57BB;
+    color:#759FBC;
+}
+
+/*one correspond spécifiquement à la classe de l'ensemble titre "Jeu web ..."*/
+.one {
+    background-color:#213a57BB;
+}
+
+.one h1 {
+    text-align:center; 
+    font-size:3em; /*50px*/
+    text-transform:uppercase; 
+    color:#4DCCBD; 
+    letter-spacing:0.3rem;
+    font-family:"Playfair Display", serif;
+    font-weight:400;
+    line-height: 0.8em;
+}
+
+.titre_accueil { /* Dans la div se trouve le "Jeu [...] cryptographie"*/
+    /*font-family:"Browser"; */
+    text-align:center;
+}
+
+.one h1 span { /*Dans le span se trouve le "J'ai perdu" */
+    margin-top: 5px;
+    font-size:15px;
+    color:#759FBC;
+    word-spacing:1px;
+    font-weight:normal;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    font-family:"Raleway", sans-serif;
+    font-weight:500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+.one h1 span:after,.one h1 span:before { /* Ca c'est la définition des lignes au-dessus/en-dessous du titre */
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:hsl(203, 44%, 32%);
+    /*margin-top: 25px;*/
+}
+
+.one h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:hsl(203, 44%, 32%);
+    margin-bottom: 25px;
+}
+
+/* footer corrrespond au pied de page, heure + adresse télécom*/
+
+footer {
+    margin-left:1%; /* essentiel pour laisser une petite marge à gauche*/
+}
+
+footer:before { /* définition d'une ligne séparatrice */
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    height: 5px;
+    margin-bottom: 10px;
+    margin-left: -1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sous-Titres (surtout le titre spécifique à la page, par exemple "Cryptanalyse de César") */
+
+h2 {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #4DCCBD;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h2 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+h2 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* two : classe du titre spécifique à la page, par exemple "Cryptanalyse de César") */
+.two {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #2E5077;
+    z-index: 2;
+    margin-bottom: 1px;
+    position : sticky;
+    top : 6.5%;
+}
+.two h2 {
+    text-align:center;
+    text-transform:uppercase;
+    font-family:var(--nav-h-font); 
+    font-size:2rem;
+    letter-spacing:var(--Browser-letter-spacing);
+    display: grid;
+    vertical-align: middle ;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 7px;
+}
+
+.two h2:after,.two h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #759FBC;
+    background-color:hsl(203, 44%, 32%);
+}
+
+
+
+
+
+
+
+
+
+
+/* Sous-sous titre, genre "Histoire de la méthode", "Déchiffrage", etc*/
+h3 {
+    padding-bottom: 5px;
+    display: block;
+    margin-left: 20px;
+    font-family:var(--nav-h-font);
+    font-size: 1.5rem;
+    letter-spacing:var(--Browser-letter-spacing);
+}
+
+/* citation des sources*/
+.source a:link {
+    color :#5ae53f
+}
+.source a:visited{
+    color :#14be7f
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Menu déroulant */
+
+a {
+    text-decoration: none;
+    color: #4DCCBD;
+}
+
+/* navbar_accueil : classe spécifique au menu de la page d'accueil */
+.navbar_accueil {
+    font-size: 2rem;
+    margin:auto;
+    position: relative;
+    transform: translateY(-10%);
+    width : 23%;
+    border-radius: 150px;
+    /*transform: translateY(-150%);
+    display:block;
+    margin:37.5%;*/
+}
+
+.navbar_accueil .sub-menu {
+    font-size: 1.5rem;
+    position : absolute;
+    transform: translateY(-50%); /* essentiel pour "remonter" le submenu à la hauteur du bouton parent*/
+    /*nav-left: root;*/
+    /*right: unset !important;*/
+    background-color: #EEE5E900;
+    line-height: auto;
+    width : 63%;
+}
+
+.navbar-accueil .sub-menu li:hover a { /* modif de l'apparence au survol de la souris */
+    background-color: #EEE5E9;
+    color: hsl(203, 44%, 32%);
+    transform: scale(1);
+    position : absolute;
+}
+
+/* toujours pour le menu d'accueil, séparation des submenu en un submenu à droite (classe .right) et en un submenu à gauche (classe .left)*/
+.right {
+    left : 100%;
+    background-color: #43b0a3;
+    /*transform: translateX(100%);*/
+    width : 95%;
+}
+.left {
+    right : 135%;
+    /*transform: translateX(-100%);*/
+    background-color: #43b0a3;
+    width : 95%;
+    margin: auto;
+}
+/* le sub-menu des chapitres n'est pas assez remonté, donc classe juste pour le pousser plus vers le haut */
+.sub-menu.up {
+    transform: translateY(-100%);
+}
+
+
+/* valable pour toutes les barres de navigation*/
+nav {
+    font-size: 1.8rem;
+    letter-spacing: var(--Browser-letter-spacing);
+    font-weight: bold;
+    font-family: var(--nav-h-font);
+    width : 100%;
+    z-index: 3; /* gère la superposition (avant plan/arrière-plan) s'il y a un problème d'affichage c'est sûrement ici */
+    margin-bottom: 1px;
+    position : sticky; /* c'est pour que la navbar reste en haut de page pendant le scroll */
+    top : 0;
+    background-color:#1b2f46;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+    /*position: relative;*/
+    width: 250px;
+}
+nav ul li {
+    position : sticky;
+}
+nav li a {
+    display: block;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+nav li:hover a{
+    background-color: hsl(163, 55%, 55%);
+    color: hsl(202, 44%, 32%);
+    transform: scale(1.0);
+    border-radius: 50px;
+}
+
+nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    border-top: #2e4e75;
+    display: none;
+    position: absolute;
+    background-color: hsl(163, 55%, 55%); /*même couleur que main bouton survolé*/
+    width: 250px;
+    font-size: 1.2rem;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    color: #2E5077;
+    transition: transform 0.3s;
+    padding: 0.7rem;
+}
+
+.sub-menu li:hover a {
+    background-color: #eee5e9;
+    color: hsl(203, 44%, 32%);
+    transform: scale(1);
+}
+
+section.wrapper {
+    margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* contenu pages en général*/
+#Article {
+    padding: 70px;
+}
+
+.Articlesection {
+    padding: 10px;
+}
+.Articlesubsection {
+    padding: 20px;
+}
+
+.boxSection{
+    padding: 20px;
+    background-color: #213a57;
+    border-radius : 50px;
+}
+.boxSubsection{
+    padding: 25px;
+    background-color: #365c89;
+    border-radius: 30px;
+}
+
+.code {
+    border-radius: 30px;
+    padding : 20px;
+    background-color: #0c0b19;
+}
+/* shlag -faire apparaître des tabulations dans un rendu 'code' */
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+.twotab {
+    display: inline-block;
+    margin-left: 80px;
+}
+.threetab {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+
+.background_color{
+    background-color: rgb(22, 37, 53);
+}
+
+
+
+
+
+
+/*classe pour notre présentation (page A propos) */
+
+.member-box {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #4DCCBD;
+}
+
+.member {
+    min-width: 275px;
+    padding: 15px;
+    /*background: hsl(203, 44%, 32%);*/
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.photo-wrapper {
+    vertical-align: top;
+    width: 10%;
+    display: inline-block;
+}
+
+.photo {
+    /*margin-right: 15px;*/
+    display: inline-block;
+    /*background: hsl(203, 44%, 32%);*/
+    border: 15% solid hsl(203, 44%, 32%);
+    vertical-align: top;
+    max-width: 6%;
+    max-height: 10%;
+}
+
+.infos {
+    display: inline-block;
+    background: hsl(203, 44%, 32%);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    min-width: 200px;
+    width: 20%;
+    vertical-align: middle;
+    color: #4DCCBD;
+    font-size: 14px;
+    font-family: 'latoregular',Helvetica,Arial,sans-serif;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.infos div{
+    margin-left: 3%;
+}
+
+.name {
+    color: #759FBC;
+    font-family: 'latobold',Helvetica,Arial,sans-serif;
+}
+.fonction{  /*aka Elève Ingénieur 1ère année*/
+    color: #4DCCBD;
+    font-family: 'latoregular',Helvetica,Arial,sans-serif;
+}
+
+.service { /*aka 1ère année/Cursus Ingénieur/zoreille */
+    font-family: 'latobold',Helvetica,Arial,sans-serif;
+    color: #4DCCBD;
+}
+
+.citation { /* aka zoreille */
+    font-style: italic;
+}
+
+.contact {
+    color: #4DCCBD;
+    float: right;
+    min-width: 300px;
+    vertical-align: top;
+    width: 50%;
+    font-family: 'latoregular',Helvetica,Arial,sans-serif;
+}
+
+.email {
+    color: #759FBC;
+    float: right;
+    font-family: 'latoregular',Helvetica,Arial,sans-serif;
+}
+
+.member .contact .email a::before {
+    color: #4DCCBD;
+    /*content: "\f0e0";
+    display: inline-block;
+    margin-right: 0.6em;*/
+    font-family: 'FontAwesome';
+    min-width: 15px;
+    text-align: center;
+}
+
+/*.member::after {
+    content: '';
+    clear: both;
+    display: block;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----Couleurs-----*/
+
+section .couleurs {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .bleu {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #2E5077;
+  }
+
+  .light-blue {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #759FBC;
+  }
+
+  .vert {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #4DCCBD;
+  }
+
+  .jaune {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #FAA916;
+  }
+
+  .blanc {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #EEE5E9;
+  }
+
+  .gris {
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    background-color: #465362;
+  }

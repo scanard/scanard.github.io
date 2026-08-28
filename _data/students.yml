@@ -1,0 +1,282 @@
+# status: current | past
+#
+# co_advisors : liste de co-encadrants, chacun avec :
+#   - name         (obligatoire)
+#   - url          (optionnel, "" si pas de site -> le nom s'affiche sans lien)
+#   - affiliation  (optionnel, ex: "Orange" -> affiché entre parenthèses après le nom)
+# - Pas de co-encadrant     -> co_advisors: []
+# - Un co-encadrant         -> une seule entrée dans la liste
+# - Plusieurs co-encadrants -> une entrée par personne, chacune avec son propre site/affiliation
+#
+# Pour les anciens doctorants (status: past), deux champs optionnels supplémentaires :
+#   - university  : établissement de soutenance (ex: "ENS Lyon")
+#   - period_fr / period_en : ex: "Soutenue le 09/07/2021" / "Defended on 09/07/2021",
+#     ou simplement une période "2021–2024" si la date exacte n'est pas connue.
+
+- name: "Nathan Papon"
+  status: current
+  topic_fr: "Adaptation du chiffrement basé sur les attributs dans le contexte d'une plateforme de collaboration temps réel"
+  topic_en: "Adapting attribute-based encryption to real-time collaboration platforms"
+  co_advisors:
+    - name: "Duong Hieu Phan"
+      url: "https://www.telecom-paris.fr/phan"
+
+- name: "Ismet Kerenciler"
+  status: current
+  topic_fr: "Primitives cryptographiques avancées pour les réseaux décentralisés"
+  topic_en: "Advanced cryptographic primitives for decentralized networks"
+  co_advisors: []
+
+- name: "Ramakrishnan Pitchaimani"
+  status: current
+  topic_fr: "Avancer la sécurité automobile : doter les véhicules de systèmes avancés de gestion de l'information et des événements de sécurité embarqués"
+  topic_en: "Advancing automotive security: equipping vehicles with advanced embedded security information and event management systems"
+  co_advisors:
+    - name: "Badis Hammi"
+      url: "https://scn.telecom-sudparis.eu/badis.html"
+
+- name: "Clément Naves"
+  status: current
+  topic_fr: "Partage intelligent et sécurisé de données sensibles dans un contexte de véhicules connectés"
+  topic_en: "Smart and secure sharing of sensitive data in the context of connected vehicles"
+  co_advisors:
+    - name: "Nesrine Kaaniche"
+      url: "https://samovar.telecom-sudparis.eu/index.php/acmes-2/nesrine-kaaniche/"
+    - name: "Maryline Laurent"
+      url: "https://www-public.imtbs-tsp.eu/~lauren_m/index.html"
+    - name: "Emmanuel Bertin"
+      url: "https://laborange.academia.edu/EmmanuelBertin"
+
+- name: "Massaer Seck"
+  status: current
+  topic_fr: "Travail sur données chiffrées régulé par une autorité"
+  topic_en: "Regulated computation over encrypted data under authority oversight"
+  co_advisors:
+    - name: "Jérémy Chotard"
+      url: "https://crypto.orange-labs.fr/acg/people/peopleProfil.php?id=398"
+    - name: "Melek Onen"
+      url: "https://onen.eurecom.io"
+
+- name: "Mustapha Jid"
+  status: current
+  topic_fr: "Équilibrer partage de données, vie privée et cybersécurité dans la mobilité intelligente"
+  topic_en: "Striking a balance between data sharing, privacy and cybersecurity in smart mobility"
+  co_advisors:
+    - name: "Thomas Le Goff"
+      url: "https://www.telecom-paris.fr/thomas-le-goff"
+
+- name: "Ganyuan Cao"
+  status: current
+  topic_fr: "Construction de protocoles multi-partites pour la réutilisation des données"
+  topic_en: "Developing multi-party protocols for data reuse"
+  co_advisors:
+    - name: "Qingju Wang"
+      url: "https://sites.google.com/view/qingjuwang"
+
+- name: "Étienne Ramrani"
+  status: current
+  topic_fr: "Pour une transition vers des véhicules post-quantiques"
+  topic_en: "Towards a transition to post-quantum vehicles"
+  co_advisors:
+    - name: "Amir Barki"
+      url: ""
+    - name: "Francesca Bassi"
+      url: ""
+
+- name: "Célia Hamiti"
+  status: current
+  topic_fr: "Stratégies de transition en cryptographie post-quantique pour les systèmes embarqués automobiles et les infrastructures de recharge des véhicules électriques"
+  topic_en: "Transition strategies for post-quantum cryptography in automotive embedded systems and electric vehicle charging infrastructure"
+  co_advisors:
+    - name: "Weiqiang Wen"
+      url: "https://www.telecom-paris.fr/weiqiang-wen"
+    - name: "Yacine Ladjici"
+      url: ""
+
+- name: "Ferran Alborch"
+  status: past
+  topic_fr: "Systèmes de chiffrement adaptés aux calculs sur données, passerelles et applications"
+  topic_en: "Encryption systems suited to computation on data, gateways and applications"
+  co_advisors:
+    - name: "Duong Hieu Phan"
+      url: "https://www.telecom-paris.fr/phan"
+      affiliation: "Télécom Paris"
+    - name: "Fabien Laguillaumie"
+      url: ""
+      affiliation: "Université de Montpellier"
+  university: ""
+  period_fr: "2021–2024"
+  period_en: "2021–2024"
+
+- name: "Anaïs Barthoulot"
+  status: past
+  topic_fr: "Chiffrement avancé pour le partage de données sensibles"
+  topic_en: "Advanced encryption for sharing sensitive data"
+  co_advisors:
+    - name: "Olivier Blazy"
+      url: ""
+      affiliation: "École Polytechnique"
+  university: ""
+  period_fr: "2020–2023"
+  period_en: "2020–2023"
+
+- name: "Paul Frixons"
+  status: past
+  topic_fr: "Cryptographie à clé secrète sur l'impact d'un attaquant quantique dans les télécommunications"
+  topic_en: "Secret-key cryptography and the impact of a quantum attacker in telecommunications"
+  co_advisors:
+    - name: "Maria Naya-Plasencia"
+      url: ""
+      affiliation: "INRIA Paris"
+    - name: "Loïc Ferreira"
+      url: ""
+      affiliation: "Orange"
+  university: "INRIA Paris"
+  period_fr: "2019–2022"
+  period_en: "2019–2022"
+
+- name: "Adel Hamdi"
+  status: past
+  topic_fr: "Chiffrement fonctionnel pour le traitement de données externes en aveugle"
+  topic_en: "Functional encryption for blind processing of external data"
+  co_advisors:
+    - name: "Fabien Laguillaumie"
+      url: ""
+      affiliation: "ENS Lyon"
+  university: "ENS Lyon"
+  period_fr: "Soutenue le 09/07/2021"
+  period_en: "Defended on 09/07/2021"
+
+- name: "Guillaume Kaim"
+  status: past
+  topic_fr: "Cryptographie post-quantique pour la protection de la vie privée"
+  topic_en: "Post-quantum cryptography for privacy protection"
+  co_advisors:
+    - name: "Adeline Roux-Langlois"
+      url: ""
+      affiliation: "CNRS, IRISA"
+    - name: "Jacques Traoré"
+      url: ""
+      affiliation: "Orange"
+  university: "IRISA Rennes"
+  period_fr: "Soutenue le 16/12/2020"
+  period_en: "Defended on 16/12/2020"
+
+- name: "Loïc Ferreira"
+  status: past
+  topic_fr: "Secure Tunnels for Constrained Environments"
+  topic_en: "Secure Tunnels for Constrained Environments"
+  co_advisors:
+    - name: "Gildas Avoine"
+      url: ""
+      affiliation: "IRISA Rennes"
+  university: "IRISA Rennes"
+  period_fr: "Soutenue le 18/09/2019"
+  period_en: "Defended on 18/09/2019"
+
+- name: "Quentin Santos"
+  status: past
+  topic_fr: "Cryptography for Pragmatic Distributed Trust and the Role of Blockchain"
+  topic_en: "Cryptography for Pragmatic Distributed Trust and the Role of Blockchain"
+  co_advisors:
+    - name: "David Pointcheval"
+      url: ""
+      affiliation: "ENS"
+    - name: "Jacques Traoré"
+      url: ""
+      affiliation: "Orange"
+  university: "Université de Recherche Paris Sciences et Lettres"
+  period_fr: "Soutenue le 20/12/2018"
+  period_en: "Defended on 20/12/2018"
+
+- name: "Donald Nokam Kuate"
+  status: past
+  topic_fr: "Cryptographie homomorphe et transcodage d'image/vidéo dans le domaine chiffré"
+  topic_en: "Homomorphic encryption and image/video transcoding in the encrypted domain"
+  co_advisors:
+    - name: "Renaud Sirdey"
+      url: ""
+      affiliation: "CEA"
+  university: "Université Paris Saclay"
+  period_fr: "Soutenue le 14/12/2018"
+  period_en: "Defended on 14/12/2018"
+
+- name: "Marie Paindavoine"
+  status: past
+  topic_fr: "Méthodes de calculs sur les données chiffrées"
+  topic_en: "Methods for computing on encrypted data"
+  co_advisors:
+    - name: "Fabien Laguillaumie"
+      url: ""
+      affiliation: "ENS Lyon"
+  university: "Université de Lyon"
+  period_fr: "Soutenue le 27/01/2017"
+  period_en: "Defended on 27/01/2017"
+
+- name: "Olivier Sanders"
+  status: past
+  topic_fr: "Conception et optimisation de mécanismes cryptographiques anonymes"
+  topic_en: "Design and optimization of anonymous cryptographic mechanisms"
+  co_advisors:
+    - name: "David Pointcheval"
+      url: ""
+      affiliation: "ENS"
+  university: "ENS"
+  period_fr: "Soutenue le 24/09/2015"
+  period_en: "Defended on 24/09/2015"
+
+- name: "Julien Devigne"
+  status: past
+  topic_fr: "Protocoles de re-chiffrement pour le stockage de données"
+  topic_en: "Re-encryption protocols for data storage"
+  co_advisors:
+    - name: "Fabien Laguillaumie"
+      url: ""
+      affiliation: "Université de Caen Normandie"
+    - name: "Brigitte Vallée"
+      url: ""
+      affiliation: "Université de Caen Normandie"
+  university: "Université de Caen Normandie"
+  period_fr: "Soutenue le 13/11/2013"
+  period_en: "Defended on 13/11/2013"
+
+- name: "Roch Lescuyer"
+  status: past
+  topic_fr: "Outils cryptographiques pour les accréditations anonymes"
+  topic_en: "Cryptographic tools for anonymous credentials"
+  co_advisors:
+    - name: "David Pointcheval"
+      url: ""
+      affiliation: "ENS"
+  university: "Université Paris Diderot"
+  period_fr: "Soutenue le 21/11/2012"
+  period_en: "Defended on 21/11/2012"
+
+- name: "Amandine Jambert"
+  status: past
+  topic_fr: "Outils cryptographiques pour la protection des contenus et de la vie privée des utilisateurs"
+  topic_en: "Cryptographic tools for content protection and user privacy"
+  co_advisors:
+    - name: "Gilles Zémor"
+      url: ""
+      affiliation: "Université de Bordeaux 1"
+    - name: "Marc Girault"
+      url: ""
+      affiliation: "Orange"
+  university: "Université de Bordeaux 1"
+  period_fr: "Soutenue le 15/03/2011"
+  period_en: "Defended on 15/03/2011"
+
+- name: "Iwen Coisel"
+  status: past
+  topic_fr: "Authentification et anonymat à bas coût : modélisations et protocoles"
+  topic_en: "Low-cost authentication and anonymity: models and protocols"
+  co_advisors:
+    - name: "Marc Girault"
+      url: ""
+      affiliation: "Orange"
+  university: "Université de Caen Normandie"
+  period_fr: "Soutenue le 09/10/2009"
+  period_en: "Defended on 09/10/2009"
+
+# Ajoute ici les prochains anciens doctorants (status: past) au fur et à mesure des soutenances.

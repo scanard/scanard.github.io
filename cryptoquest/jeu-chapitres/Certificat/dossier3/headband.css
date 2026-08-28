@@ -1,0 +1,78 @@
+body{
+    padding : 1vw;
+    justify-content: space-evenly;
+    background-color: rgb(142, 142, 193);
+    background-image: url(background_headband.png);
+    background-size: contain;
+}
+
+#haut_site{
+    display : grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgba(151, 169, 177, 0.7);
+}
+
+#haut_site a{
+    grid-column: 1;
+    padding : 1vw;
+}
+
+#haut_site a img{
+    width : 100%;
+    height: auto;
+    padding : 1vw;
+}
+
+#haut_site h1{
+    grid-column: 2;
+    font-size : 5vw;
+    padding-left  : 3vw;
+}
+
+#corps_page{
+    padding : 1vw;
+}
+
+.fond_section{
+    padding : 2vw;
+    background-color: rgba(209, 158, 199, 0.7);
+    border-radius: 1vw;
+}
+.fond_section h1{
+    font-size : 2.5vw;
+}
+
+.presentation{
+    padding : 1vw;
+    background-color: rgba(168, 254, 253, 0.7);
+    font-size: 1.5vw;
+    border-radius: 1vw;
+}
+
+.presentation{
+    padding : 2vw;
+}
+
+.miel{
+    padding : 1vw;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-columns: 20% 80%;
+}
+.miel img {
+    max-width: 500%;
+    max-height: auto;
+    display: block;
+    margin: auto;
+    grid-column: 1;
+    width : 35%;
+}
+
+.miel .description{
+    grid-column: 2;
+    grid-row : 2;
+    font-size: 2vw;
+}
+

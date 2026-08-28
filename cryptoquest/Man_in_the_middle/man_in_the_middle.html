@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu crypto</title>
+    <link rel="icon" href="/cryptoquest/img/image.png">
+    <link rel="stylesheet" href="/cryptoquest/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="Auteur" content="les bg">
+    <meta name="Description" content="jeu crypto">
+    <script src="/cryptoquest/main.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section id="Titre">
+            <div class="one">
+                <h1>Jeu web d'introduction à la cryptographie
+                    <br>
+                    <br>
+                    <span>J'ai perdu</span>
+                </h1>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/cryptoquest/main.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="" title="Bibliographie">Bibliographie</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/Scytale/scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cryptanalyse_cesar/cryptanalyse_cesar.html" title="Méthode et cryptanalyse de César">Méthode et cryptanalyse de César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vigenere/Vigenere.html" title="Chiffre de Vigenère">Chiffre de Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Grand_chiffre/grand_chiffre.html" title="Le grand chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vernam/vernam.html" title="Vernam">Méthode de Vernam</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Man_in_the_middle/man_in_the_middle.html" title="Man in the middle">Attaque Man in the Middle</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Enigma/enigma.html" title="Machine Enigma">Machine Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Echange_cle/echange_cle.html" title="Principe de l'échange de clé">Principe de l'échange de clé</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cle_publique/cle_publique.html" title="Clé publique">Clé publique</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Certificat/certificat.html" title="Certificat">Principe de Certificat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Chapitres">Chapitres</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Scytale/Scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cesar/Cesar.html" title="Cesar">César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Vigenere/Vigenere-chap.html" title="Vigenère">Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/GrandChiffre/Chapitre-grandchiffre.html" title="Le Grand Chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/enigma/enigma.html" title="Les Certificats">Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cle_publique/Cle_publique.html" title="Les clés publiques">Les clés publiques</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Certificat/Chapitre-certificat.html" title="Les Certificats">Les Certificats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/cryptoquest/A_propos/A_propos.html" title="A_propos">A propos</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Titre" class="two">
+            <div>
+                <h2><a href="#">Man in the middle (MITM) ou Attaque de l'homme au milieu</a></h2>
+            </div>
+        </section>
+        <section id="Article">
+
+            <div class="Articlesection">
+            <div class="boxSection">
+                <h3>Introduction</h3>
+                En cryptographie et en sécurité informatique, une attaque de l'homme du milieu (MITM pour Man in the middle) ou attaque sur le chemin est une cyberattaque où l'attaquant relaie secrètement et éventuellement modifie les communications entre deux parties qui pensent qu'elles communiquent directement entre elles, car l'attaquant s'est interposé entre les deux parties.<br>
+
+                Un exemple d'attaque MITM est l'écoute active, dans laquelle l'attaquant établit des connexions indépendantes avec les victimes et relaie des messages entre elles pour les faire croire qu'elles communiquent directement entre elles via une connexion privée, alors que toute la conversation est en fait contrôlée par l'attaquant. Dans ce scénario, l'attaquant doit être capable d'intercepter tous les messages pertinents échangés entre les deux victimes et d'en injecter de nouveaux. Cela est réalisable dans de nombreuses situations; par exemple, un attaquant dans la portée de réception d'un point d'accès Wi-Fi non chiffré pourrait se placer en tant qu'homme du milieu.<br>
+
+                Comme elle vise à contourner l'authentification mutuelle, une attaque MITM ne peut réussir que lorsque l'attaquant se fait passer pour chaque point d'extrémité de manière suffisamment convaincante pour satisfaire leurs attentes. La plupart des protocoles cryptographiques incluent une forme d'authentification des points d'extrémité spécifiquement pour prévenir les attaques MITM. Par exemple, TLS peut authentifier l'une ou les deux parties en utilisant une autorité de certification mutuellement fiable.
+            </div></div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                <h3>Exemple</h3>
+                <center>
+                    <img src="/cryptoquest/Man_in_the_middle/man-in-the-middle-attack-FR_02-Phases-of-man-in-middle-attack.png" height="50%" width ="50%"/>
+                    <figcaption> Schéma MITM,<a target="_blank" href ="https://www.pandasecurity.com/en/mediacenter/man-in-the-middle-attack/">Panda</a> </figcaption>
+                    </center>
+
+                    Supposons qu'Alice souhaite communiquer avec Bob. Pendant ce temps, Mallory souhaite intercepter la conversation pour écouter (violant la confidentialité) avec la possibilité de transmettre un faux message à Bob sous l'apparence d'Alice (violant la non-répudiation). Mallory effectuerait une attaque de l'homme du milieu comme décrit dans la séquence d'événements suivante.
+                    Alice envoie un message à Bob, qui est intercepté par Mallory :<br>
+                    
+                    Alice "Salut Bob, c'est Alice. Donne-moi ta clé." →     Mallory     Bob <br>
+                    
+                    Mallory transmet ce message à Bob; Bob ne peut pas dire que ce n'est pas vraiment d'Alice :<br>
+                    
+                    Alice     Mallory "Salut Bob, c'est Alice. Donne-moi ta clé." →     Bob<br>
+                    
+                    Bob répond avec sa clé de chiffrement :<br>
+                    
+                    Alice     Mallory     ← [Clé de Bob] Bob<br>
+                    
+                    Mallory remplace la clé de Bob par la sienne et transmet cela à Alice, prétendant que c'est la clé de Bob :<br>
+                    
+                    Alice     ← [Clé de Mallory] Mallory     Bob<br>
+                    
+                    Alice chiffre un message avec ce qu'elle pense être la clé de Bob, pensant que seul Bob peut le lire :<br>
+                    
+                    Alice "Retrouve-moi à l'arrêt de bus !" [chiffré avec la clé de Mallory] →     Mallory     Bob<br>
+                    
+                    Cependant, parce qu'il a été réellement chiffré avec la clé de Mallory, Mallory peut le déchiffrer, le lire, le modifier (si désiré), le rechiffrer avec la clé de Bob et le transmettre à Bob :<br>
+                    
+                    Alice     Mallory "Retrouve-moi près de la camionnette au bord de la rivière !" [chiffré avec la clé de Bob] →     Bob<br>
+                    
+                    Bob pense que ce message est une communication sécurisée d'Alice.<br>
+                    
+                    Cet exemple montre la nécessité pour Alice et Bob d'avoir un moyen de s'assurer qu'ils utilisent véritablement les clés publiques l'un de l'autre, et non la clé publique d'un attaquant. Sinon, de telles attaques sont généralement possibles, en principe, contre n'importe quel message envoyé en utilisant la technologie de clé publique.<br>
+    </div></div>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <address>TELECOM Paris, 19 Pl. Marguerite Perey, 91120 Palaiseau 🦆</address>
+
+        <p id="clock"></p>
+        <br>
+    </footer>
+    <header>
+        <center>
+        Projet fait au sein de l'unité d'enseignement Proj104 de Télécom Paris
+        </center>
+    </header>
+
+</body>
+
+</html>

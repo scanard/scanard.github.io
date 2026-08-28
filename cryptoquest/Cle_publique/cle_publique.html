@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu crypto</title>
+    <link rel="icon" href="/cryptoquest/img/image.png">
+    <link rel="stylesheet" href="/cryptoquest/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="Auteur" content="les bg">
+    <meta name="Description" content="jeu crypto">
+    <script src="/cryptoquest/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="Titre">
+            <div class="one">
+                <h1>Jeu web d'introduction à la cryptographie
+                    <br>
+                    <br>
+                    <span>J'ai perdu</span>
+                </h1>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/cryptoquest/main.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="" title="Bibliographie">Bibliographie</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/Scytale/scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cryptanalyse_cesar/cryptanalyse_cesar.html" title="Méthode et cryptanalyse de César">Méthode et cryptanalyse de César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vigenere/Vigenere.html" title="Chiffre de Vigenère">Chiffre de Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Grand_chiffre/grand_chiffre.html" title="Le grand chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vernam/vernam.html" title="Vernam">Méthode de Vernam</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Man_in_the_middle/man_in_the_middle.html" title="Man in the middle">Attaque Man in the Middle</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Enigma/enigma.html" title="Machine Enigma">Machine Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Echange_cle/echange_cle.html" title="Principe de l'échange de clé">Principe de l'échange de clé</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cle_publique/cle_publique.html" title="Clé publique">Clé publique</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Certificat/certificat.html" title="Certificat">Principe de Certificat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Chapitres">Chapitres</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Scytale/Scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cesar/Cesar.html" title="Cesar">César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Vigenere/Vigenere-chap.html" title="Vigenère">Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/GrandChiffre/Chapitre-grandchiffre.html" title="Le Grand Chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/enigma/enigma.html" title="Les Certificats">Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cle_publique/Cle_publique.html" title="Les clés publiques">Les clés publiques</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Certificat/Chapitre-certificat.html" title="Les Certificats">Les Certificats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/cryptoquest/A_propos/A_propos.html" title="A_propos">A propos</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Titre" class="two">
+            <div>
+                <h2><a href="#">Principe de chiffrement par clé publique</a></h2>
+            </div>
+        </section>
+        <section id="Article">
+
+            <div class="Articlesection">
+                <div class="boxSection">
+            <h3>Contexte cryptographique</h3>
+            La faiblesse principale des méthode de cryptographie symétrique, c'est-à-dire où la même clé sert à coder et décoder le message, est le problème de l'échange de clé. En effet, pour qu'Alice puisse décoder le message que Bob lui a envoyé, Bob doit aussi trouver le moyen d'envoyer la clé à Alice. Si les deux sont perpétuellement écouté par un espion Eve, alors il est certain que le message va pouvoir être décodé par Eve.
+            <br> L'un des moyens les plus connus pour résoudre le problème de l'échange de clé est le fameux téléphone rouge qui permettait aux Etats-Unis et à l'URSS de communiquer secrètement. Ce dispositif, qui n'est ni un téléphone ni rouge, a évolué au fil des progrès en cryptographie. La méthode utilisée était le chiffre de Vernam, parfaitement sûr à condition bien sûr que la clé ne soit pas interceptée. Pour ce faire, les clés circulaient dans des valises diplomatiques. Ainsi, le téléphone rouge permettait une communication parfaitement sûre entre deux personnes dans le monde, une limite de la cryptographie symétrique. 
+            <br> L'objectif de la cryptographie asymétrique est de permettre une communication sécurisée entre les particuliers, une révolution pour la vie privée des individus.
+                </div>
+            </div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+            <h3>Présentation</h3>
+            On pourrait modéliser le procédé avec des cadenas et des clés. D'abord, Alice diffuse au mode entier un nombre illimité de cadenas identiques qui peuvent être ouverts uniquement par la clé qu'elle garde bien secrètement pour elle. Si Bob veut envoyer un message à Alice et être sûr que seule Alice peut le lire, il a juste à se procurer un coffre, à y déposer le message pour Alice et à le fermer avec le fameux cadenas. Ensuite, Bob envoie le coffre à Alice, qu'elle pourra ouvrir avec sa clé.
+            <br>Dans l'algorithme RSA, premier algorithme de cryptographie asymétrique, chaque individu possède deux clés : une clé publique et une clé privée. Dans l'analogie précédente, la clé publique correspond aux cadenas et la clé privée correspond à la clé du cadenas. Comme leur nom l'indique, la clé publique est accessible par tous, et la clé privée doit absolument rester secrète. Les clés vont de pair : la clé publique sert à chiffrer un message et la clé privée permet de déchiffrer un message codée avec la clé publique associée. 
+            <br>Par exemple, imaginons que Alice veuille envoyer un message à Bob. Pour ce faire, il récupère la clé publique d'Alice, et encode le message avec. Ensuite, Alice, seule détentrice de la clé privée, peut déchiffrer le message codé que lui a envoyé Bob. 
+                </div>
+            </div>
+
+            <div class = background_color>
+                <center>
+                    <img src="/cryptoquest/Cle_publique/Chiffrement_asymétrique_image.png" height="50%" width ="50%"/>
+                    <figcaption> Schéma de principe de la cyptographie asymétrique. La clé verte est la clé publique d'Alice, et la clé rouge et sa clé privée,<a target="https://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique#/media/Fichier:Asymmetric_cryptography_-_step_2.svg">Wikipédia</a> </figcaption>
+                </center>
+            </div>
+
+
+            <div class="Articlesection">
+                <div class="boxSection">
+            <h3>Histoire</h3>
+            Le concept de cryptographie asymétrique est attribué à Whitfield Diffie et Martin Hellman en 1976. Le premier algorithme fonctionnel est l'algorithme RSA, des initiales des trois chercheurs l'ayant mis au point en 1977 : Ronald Rivest, Adi Shamir et Leonard Adleman. 
+            <br> Une condition indispensable est qu'il soit « calculatoirement impossible » de déchiffrer à l'aide de la seule clé publique, en particulier de reconstituer la clé privée à partir de la clé publique, c'est-à-dire que les moyens de calcul disponibles et les méthodes connues au moment de l'échange (et le temps que le secret doit être conservé) ne le permettent pas.
+                </div>
+            </div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+            <h3>Histoire</h3>
+            Voici le principe mathématique derrière l'algorithme RSA à travers un exemple.
+            <ul>
+                <li>On va choisir deux nombres premiers (pas trop grands ici pour la simplicité de l'exemple, mais dans la pratique il faut choisir des nombres très grand), ici p = 3 et q = 11.</li> 
+                <li>On calcule n = pq = 3 * 11 = 33.</li>
+                <li>On calcule phi(n) = (p - 1)(q - 1) = 2 * 10 = 20.</li> 
+                <li>Choisir e tel que 1 < e < phi(n) et e et phi(n) sont premiers entre eux. On prend e = 7.</li> 
+                <li>Choisir un d tel que de % phi(n) = 1 : le reste de la division euclidienne de de = 7d par phi(n) = 20 est 1. On prend d = 3.</li> 
+                <li>On définit la clé publique : (e, n) = (7, 33).</li> 
+                <li>On définit la clé privée : (d, n) = (3, 33).</li> 
+                <li>Si on veut encoder m = 2, on calcule c = 2^e % n = 2^7 % 33 = 29.</li> 
+                <li>Si on veut décoder c = 29, on calcule m = 2^d % n = 29^3 % 33 = 2.</li> 
+            </ul>
+            Alice utilise la clé publique pour encoder son message, m et obtient c. Bob peut décoder c grâce à la clé privée pour obtenir m. Si Eve intercepte c, elle peut difficilement retrouver m, car il est très difficile mathématiquement d'inverser la fonction utilisée (l'exponentiation modulaire). Dans les faits, elle doit tester toutes les possibilités, ce qui n'est pas du tout envisageable lorsque les nombres premiers p et q sont très grands. 
+                </div>
+            </div>
+
+
+            <div class="Articlesection">
+                <div class="source">
+                    <div class="boxSection">
+                        <h3>Sources</h3>
+                        The Code Book, Simon Singh<br>
+                        <a target="_blank" href = "https://fr.wikipedia.org/wiki/Cryptographie_asym%C3%A9trique">Wikipédia, Cryptographie asymétrique</a><br>
+                        <a target="_blank" href = "https://fr.wikipedia.org/wiki/Chiffrement_RSA">Wikipédia, Chiffrement RSA</a><br>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <address>TELECOM Paris, 19 Pl. Marguerite Perey, 91120 Palaiseau 🦆</address>
+        <p id="clock"></p>
+        <br>
+    </footer>
+    <header>
+        <center>
+        Projet fait au sein de l'unité d'enseignement Proj104 de Télécom Paris
+        </center>
+    </header>
+</body>
+
+</html>

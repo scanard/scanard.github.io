@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu crypto</title>
+    <link rel="icon" href="/cryptoquest/img/image.png">
+    <link rel="stylesheet" href="/cryptoquest/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="Auteur" content="les bg">
+    <meta name="Description" content="jeu crypto">
+    <script src="/cryptoquest/main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="Titre">
+            <div class="one">
+                <h1>Jeu web d'introduction à la cryptographie
+                    <br>
+                    <br>
+                    <span>J'ai perdu</span>
+                </h1>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/cryptoquest/main.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="" title="Bibliographie">Bibliographie</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/Scytale/scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cryptanalyse_cesar/cryptanalyse_cesar.html" title="Méthode et cryptanalyse de César">Méthode et cryptanalyse de César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vigenere/Vigenere.html" title="Chiffre de Vigenère">Chiffre de Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Grand_chiffre/grand_chiffre.html" title="Le grand chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vernam/vernam.html" title="Vernam">Méthode de Vernam</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Man_in_the_middle/man_in_the_middle.html" title="Man in the middle">Attaque Man in the Middle</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Enigma/enigma.html" title="Machine Enigma">Machine Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Echange_cle/echange_cle.html" title="Principe de l'échange de clé">Principe de l'échange de clé</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cle_publique/cle_publique.html" title="Clé publique">Clé publique</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Certificat/certificat.html" title="Certificat">Principe de Certificat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Chapitres">Chapitres</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Scytale/Scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cesar/Cesar.html" title="Cesar">César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Vigenere/Vigenere-chap.html" title="Vigenère">Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/GrandChiffre/Chapitre-grandchiffre.html" title="Le Grand Chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/enigma/enigma.html" title="Les Certificats">Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cle_publique/Cle_publique.html" title="Les clés publiques">Les clés publiques</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Certificat/Chapitre-certificat.html" title="Les Certificats">Les Certificats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/cryptoquest/A_propos/A_propos.html" title="A_propos">A propos</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Titre" class="two">
+            <div>
+                <h2><a href="#">Principe de certification</a></h2>
+            </div>
+        </section>
+        <section id="Article">
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                    
+                <h3>Qu'est-ce qu'un certificat, pourquoi les utiliser ?</h3>
+                Un certificat permet de vérifier l'identité d'une personne, d'une entité. C'est une forme de signature numérique. Pour obtenir un certificat, une entité doit le demander à une autorité de certification. le certificat donné par cette autorité est valable uniquement si l'on considère que c'est une autorité de confiance : il appartient donc au receveur du certificat, si il fait confiance à cette autorité, d'accepter cette validation d'identité.  En France, un certificat numérique est délivré par un organisme agréé par le ministère chargé des finances.<br>
+
+                On peut avoir besoin d'un certificat dans le cas de transmission de clé publique. Si celle-ci n'est pas sécurisée, un attaquant peut se positionner entre l'entité et son public en diffusant de fausses clés publiques (par le biais d'un faux site web par exemple) puis intercepter toutes les communications, lui permettant d'usurper l'identité du diffuseur de clés publique et de créer une attaque de l'homme du milieu.  <br>
+
+                Dans un cadre fermé et relativement restreint (entreprise, service public…) la diffusion de clés sécurisées est relativement simple et peut prendre de nombreuses formes, mais quand le diffuseur souhaite s'adresser à un public plus large avec lequel il n'a pas eu de contact préalable (grand public, public international) elle nécessite un cadre normalisé.<br>
+
+                Les certificats résolvent le problème du canal sécurisé grâce à la signature de tiers de confiance.<br>
+                </div>
+            </div>
+            <div class="Articlesection">
+                <div class="boxSection">
+                    
+                <h3>Que contient le certificat et comment l'obtenir?</h3>
+                Pour qu'une autorité de certification procure un certificat à une entité, l'entité (site web,...) doit fournir à cette autorité plusieurs éléments, dont : 
+                <ul>
+                    <li>
+                        Sa clé publique : l'autorité de certification doit vérifier si l'entité possède bien la clé privée, pour cela, elle lui enverra un challenge chiffré que l'entité devra lui renvoyer décrypté
+                    </li>
+                    <li>
+                        l'url du site web demandant le certificat
+                    </li>
+                    <li>
+                        un moyen de vérifier l'identité de l'entreprise : cela peut se faire en fournissant des informations sur le responsable légal, des documents commerciaux ou autres.
+                    </li>
+                </ul>
+                Ce sont les 3 éléments majeurs. L'autorité peut également cependant demander d'autres informations en fonction.  <br>
+                Le certificat une fois validé contient plusieurs informations, comme la clé publique du détenteur du certificat, sa durée de validité... Il est envoyé à une autre entité accompagnée d'une signature (calculée à partir de la clé privée) chiffré avec la clé publique de l'entité qui doit la recevoir. Pour vérifier l'identité de l'envoyeur, le receveur dit vérifier la validité du certificat puis celle de la signature.<br>
+                </div>
+            </div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                    
+                <h3>Bref historique des certificats</h3>
+                Dans les années 70, la British Intellagence Agency inventa l'infrastructure à clé publique. En 90, ces découvertes furent ontrées au public, étant donnée que le nombr de communication électronique grandissiat, il était devenu nécessaire de trouver un moyen de sécuriser les informations échangées.  <br>
+                En 1994, Taher Elgama et Netscape ont développé l'un des ppremier certificat : le Secure Socket Layer (SSL)/ Transport Security Layer (TSL), aussi manifeste à travers le https.  <br>
+                En 1996, GlobalSign a été fondé en Belgique, c'est l'un des fondateurs de l'industrie de l'infrastructure à clés publiques et est une autorité de certification reconnue. <br>
+                </div>
+            </div>
+            <div class="Articlesection">
+                <div class="boxSection">
+                    
+                <h3>Sources</h3>
+                <a target="_blank" href = "https://pha.ants.gouv.fr/files/b07541f3-bc9b-4e07-b6ea-d245a972aba5/installation-certificat-numerique_1.pdf">PDF de l'ANSSI présentannt les certificats</a><br>
+                <a target="_blank" href = "https://fr.wikipedia.org/wiki/Certificat_%C3%A9lectronique ">Wikipédia : certificats électroniques</a><br>
+                <a target="_blank" href = "https://www.globalsign.com/en-sg/blog/history-internet-development-pki">GlobalSign</a><br>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <address>TELECOM Paris, 19 Pl. Marguerite Perey, 91120 Palaiseau 🦆</address>
+
+        <p id="clock"></p>
+        <br>
+    </footer>
+    <header>
+        <center>
+        Projet fait au sein de l'unité d'enseignement Proj104 de Télécom Paris
+        </center>
+    </header>
+
+</body>
+
+</html>

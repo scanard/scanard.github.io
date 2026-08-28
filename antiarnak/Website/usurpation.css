@@ -1,0 +1,108 @@
+#h00 {
+    background-image: url("images/usurp_background.webp");
+    background-attachment:fixed;
+    background-size: 100%;
+    background-color: #999999;
+
+    width: 100%;
+    height: 100%;
+    opacity: 3%;
+}
+
+a {
+    color : white;
+}
+
+#return {
+    filter:invert(0.5);
+    width: 100px;
+}
+
+body {
+    background-color: #181869;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: #09093f;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #cc0000;
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #0000aa;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #3333ff;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#main {
+    background-color: #181869;
+    color: white;
+    opacity: 0.98;
+}
+
+#main2 {
+    background-color: #1818aa;
+    color: white;
+    opacity: 0.98;
+    border-radius: 20px;
+    border-color: #18188b;
+    border-width: 12px;
+    border-style: solid;
+    text-align: center;
+}
+
+.dodont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color:#0000aa ;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #3333ff;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.doDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #248324;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #44bb44;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.dontDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #aa0000;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #bb3333;
+    border-width: 3px;
+    border-style: solid;
+}
+.doLi{
+    text-align: left;
+}
+
+.dontLi{
+    text-align: left;
+}

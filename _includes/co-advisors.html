@@ -1,0 +1,14 @@
+{%- assign advisors = include.student.co_advisors -%}
+{%- if advisors and advisors.size > 0 -%}
+  {% if page.lang == "en" %} (with {% else %} (avec {% endif %}
+  {%- for ca in advisors -%}
+    {%- if ca.url and ca.url != "" -%}
+      <a href="{{ ca.url }}">{{ ca.name }}</a>
+    {%- else -%}
+      {{ ca.name }}
+    {%- endif -%}
+    {%- if ca.affiliation and ca.affiliation != "" %} ({{ ca.affiliation }}){% endif -%}
+    {%- unless forloop.last %}, {% endunless -%}
+  {%- endfor -%}
+  )
+{%- endif -%}

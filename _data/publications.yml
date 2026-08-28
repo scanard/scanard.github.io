@@ -1,0 +1,49 @@
+# Les titres et références de publications restent inchangés d'une langue à l'autre.
+# Pour ajouter une publication : dupliquer un bloc et le compléter.
+# "url" est optionnel : si présent, le titre devient un lien (ex: vers la page DBLP de l'article).
+# Cette liste ne garde que les 8 publications les plus récentes : quand tu en ajoutes une,
+# retire la plus ancienne en bas du fichier.
+
+- authors: "Alex Aïdan, Sébastien Canard, Emmanuel Fouotsa, Melchisedech Mbeng Nyiang"
+  title: "Lightweight Lattice-Based Single-Party Public-Key Authenticated Key Exchange"
+  venue: "AFRICACRYPT 2026, pp. 3-28"
+  year: 2026
+  url: "https://dblp.org/db/conf/africacrypt/africacrypt2026.html#conf/africacrypt/AidanCFN26"
+
+- authors: "Ferran Alborch Escobar, Sébastien Canard, Fabien Laguillaumie"
+  title: "Simulation secure multi-input quadratic functional encryption: applications to differential privacy"
+  venue: "Designs, Codes and Cryptography, Volume 94, Issue 1, article 1"
+  year: 2026
+  url: "https://dblp.org/db/journals/dcc/dcc94.html#journals/dcc/EscobarCL26"
+
+- authors: "Sébastien Canard, Nathan Papon, Duong Hieu Phan"
+  title: "Public Traceability in Threshold Decryption"
+  venue: "IACR Communications in Cryptology, Volume 2, Issue 2, article 21"
+  year: 2025
+  url: "https://dblp.org/db/journals/cic/cic2.html#journals/cic/CanardPP25"
+
+- authors: "Ramakrishnan Pitchaimani, Sébastien Canard, Badis Hammi, Aurel Sorin Spornic"
+  title: "Systematic Risk Analysis of Multi-Stage Attacks in Zonal Automotive E/E Architecture"
+  venue: "NCA 2025, pp. 229-238"
+  year: 2025
+  url: "https://dblp.org/db/conf/nca/nca2025.html#conf/nca/PitchaimaniCHS25"
+
+- authors: "Sébastien Canard, Caroline Fontaine, Duong Hieu Phan, David Pointcheval, Marc Renard, Renaud Sirdey"
+  title: "Relations among new CCA security notions for approximate FHE"
+  venue: "Communications in Cryptology, Volume 2, Issue 1"
+  year: 2025
+
+- authors: "Ferran Alborch Escobar, Sébastien Canard, Fabien Laguillaumie"
+  title: "Simulation Secure Multi-input Quadratic Functional Encryption"
+  venue: "Proc. Selected Areas in Cryptography (SAC) 2024, pp. 26-53"
+  year: 2024
+
+- authors: "Ferran Alborch Escobar, Sébastien Canard, Fabien Laguillaumie, Duong Hieu Phan"
+  title: "Computational Differential Privacy for Encrypted Databases Supporting Linear Queries"
+  venue: "Proceedings on Privacy Enhancing Technologies (PoPETs) 2024(4), pp. 583-604"
+  year: 2024
+
+- authors: "Anaïs Barthoulot, Olivier Blazy, Sébastien Canard"
+  title: "Cryptographic Accumulators: New Definitions, Enhanced Security, and Delegatable Proofs"
+  venue: "AFRICACRYPT 2024, pp. 94-119"
+  year: 2024

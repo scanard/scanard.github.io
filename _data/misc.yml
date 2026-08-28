@@ -1,0 +1,29 @@
+# Contenu de l'onglet "Divers" de la section Recherche.
+#
+# conferences.program_committee : simple liste de "Conférence Année"
+# conferences.chair              : conférences dont tu as été responsable du comité de programme
+# conferences.organizing_committee : comités d'organisation
+# prizes : liste de distinctions, avec texte libre en français et en anglais
+
+conferences:
+  program_committee:
+    - "Eurocrypt 2027"
+    - "Africacrypt 2026"
+    - "Eurocrypt 2026"
+    - "Africacrypt 2025"
+    - "Africacrypt 2024"
+    - "Africacrypt 2023"
+    - "Africacrypt 2022"
+    - "Africacrypt 2020"
+    - "Africacrypt 2019"
+  chair:
+    - "Africacrypt 2027"
+  organizing_committee:
+    - "Journées Codes et Crypto 2025"
+
+prizes:
+  - text_fr: "Lauréat du prix Musée Schlumberger avec le projet CYBERCRYPT sur la pédagogie des mécanismes cryptographiques auprès des enfants et de leurs parents (à l'initiative de l'idée, montage du projet, participation et suivi de sa réalisation)."
+    text_en: "Recipient of the Musée Schlumberger prize for the CYBERCRYPT project on teaching cryptographic mechanisms to children and their parents (originated the idea, set up the project, and took part in and oversaw its execution)."
+
+  - text_fr: "Lauréat du Trophée des Étoiles de l'Europe 2022 avec le projet H2020 PROMETHEUS."
+    text_en: "Recipient of the 2022 Étoiles de l'Europe award for the H2020 PROMETHEUS project."

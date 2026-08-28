@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>CellPhone</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="CellPhone.css"/>
+		<link rel="stylesheet" href="Text Box/TextBox.css">
+		<script type="module" src="CellPhone.mjs"></script>
+		<script> var textbox;
+		</script>
+		
+		
+	</head>
+
+	<body >
+
+		<div id = "textBox-container">
+			<div id="textBox">
+				<div id="textBox-text">
+					
+				</div>
+				<div id="textBox-choices">
+
+				</div>
+			</div>
+		</div>
+		<div id ="screen-right"></div>
+		<div id="cellPhone-end-container">
+
+			<h2 id="bilan-colis-flag">Quête du colis</h2>
+			<p></p>
+			<p id="bilan-quete-Colis"></p>
+
+			<h2 id="bilan-banque-flag">Quête de la banque</h2>
+			<p></p>
+			<p id="bilan-quete-Banque"></p>
+
+			<h2 id="bilan-helene-flag">Quête d'Hélène</h2>
+			<p></p>
+			<p id="bilan-quete-Helene"></p>
+
+			<h2 id="bilan-argent-flag">Quête de l'argent</h2>
+			<p></p>
+			<div id="bilan-quete-Argent"></div>
+		</div>
+		<div id = "cellPhone-container">
+			<div id="cellPhone">
+				<div id="cellPhone-screen">
+
+					<div id="cellPhone-entering-call">
+						<p id="caller-num"> 0000000000 </p>
+						<img src="src/pick_up.jpg" id="pick_up_img"/>
+						<img src="src/hang_up.jpg" id="hang_up_img"/>
+						<audio src="call1.mp3" id="call"></audio>
+					</div>
+
+					<button id="cellPhone-notification">
+						<img src="src/icons/Whatsapp.png" id="app-icon-notification"/>
+						<p id="notif-sender"> Rémi : </p>
+						<p id="notif-content"> Viens en Artishow !!! Depecheeeeeeee-toiiiiiiiiii ! VIIIIIIIIIIIIIIIIIITTTTTTEEEEE </p>
+					</button>
+
+					
+					<div id="cellPhone-home-page" class ="cellPhone-page">
+						<div id="cellPhone-home-app-container">
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-infos" src ="src/icons/info.jpg" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Informations
+								</div>
+							</div>
+							
+	
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-SMS" src ="src/icons/SMS.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Messages
+								</div>
+							</div>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-tinder" src ="src/icons/tinder.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Tinder
+								</div>
+							</div>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-mails" src ="src/icons/Mail.png" id="mails" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Mails
+								</div>
+							</div>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-whatsapp" src ="src/icons/Whatsapp.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									WhatsApp
+								</div>
+							</div>
+							
+							<div class ="cellPhone-app">
+								
+								<img id="cellPhone-app-icon-firefox" src="src/icons/Firefox.png" class="cellPhone-app-icon" />
+								
+								<div class="cellPhone-app-name">
+									Firefox
+								</div>
+							</div>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-fichier" src ="src/icons/Fichiers.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Fichiers
+								</div>
+							</div>
+
+							<a href="https://lh.rezel.net" target = "_blank" class ="cellPhone-app">
+								<img id="cellPhone-app-icon-lemonde" src ="src/icons/LeMonde.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Le Monde
+								</div>
+							</a>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-primevideo" src ="src/icons/PrimeVideos.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Prime Video
+								</div>
+							</div>
+
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-appel" src ="src/icons/Appels.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									Appel
+								</div>
+							</div>
+							<div class ="cellPhone-app">
+								<img id="cellPhone-app-icon-BNPparibas" src ="src/icons/BNPParibas.png" class="cellPhone-app-icon" />
+
+								<div class="cellPhone-app-name">
+									BNP Paribas
+								</div>
+							</div>
+							
+							
+
+
+							
+						</div>
+						
+					</div>
+					<div id="cellPhone-appel1-page" class ="cellPhone-page" >
+						<div class="Banque" id="cellPhone-voicemail1">
+							Banque +33753472901
+						</div>
+						<div class="Maman" id="cellPhone-voicemail2">
+							Maman +33683193378
+						</div>
+						<div class="LaPoste" id="cellPhone-voicemail3">
+							La Poste +33534455232
+						</div>
+
+						<div class="Banque" id = "cellPhone-voicemail4">
+							+33569283714
+						</div>
+					</div>
+					
+					<div id="cellPhone-appel2-page" class="cellPhone-page">
+						<p id="name_caller"> NOM </p>
+						<div id="appel2-button">
+							<img id="mute" src="src/mute_icon.png">
+							<img id="speaker" src="src/speaker_icon.png">
+							<img id="hang-up-call" src="src/hang_up.jpg">
+						</div>
+					</div>
+						
+					<div id="cellPhone-SMS1-page" class ="cellPhone-page" >
+						<div id="cellPhone-SMS1-title"> <div id="cellPhone-SMS1-nb-new-messages">0</div> messages non lus</div>
+
+
+						<div id="cellPhone-SMS-zone">
+						
+							
+						</div>
+					</div>
+
+					<div id="cellPhone-SMS2-page" class = "cellPhone-page">
+						<div id="cellPhone-SMS2-header">
+							<img src="src/android-arrow-back-white.png" class="cellPhone-SMS-img cellPhone-messageapp-img can_click" id="cellPhone-SMS2-back"/>
+							<img src="src/profile.jpg" class="cellPhone-SMS-img cellPhone-messageapp-img"/>
+							<div id="cellPhone-SMS2-contact">TEST</div>
+							<div id="cellPhone-SMS2-conv" class="hidden"></div>
+						</div>
+						
+
+						<div id="cellPhone-SMS2-zone">
+							<div class="cellPhone-SMS2-date-change">mercredi 8 avril</div>
+							<div class="cellPhone-SMS2-message1">
+								<div class="cellPhone-SMS2-content">Ceci est un test, je répète, ceci est un test</div>
+								<div class="cellPhone-SMS2-date-container">
+									<div class="cellPhone-SMS2-date">11:11</div>
+								</div>
+							</div>
+
+							
+						</div>
+						<div id = "cellPhone-SMS-footer" class="cellPhone-messageapp-footer">
+							<div id ="cellPhone-SMS-writing-zone" class="cellPhone-messageapp-writing-zone">
+								<span>Répondre</span>
+							</div>
+						</div>
+
+						
+				
+					</div>
+
+
+					<div id="cellPhone-mails1-page" class="cellPhone-page">
+						<div id = "cellPhone-mail-title">Boite de réception</div>
+						<div id = "cellPhone-mail-zone">
+
+							<div class = "cellPhone-mail-container">
+								<!--<div class="cellPhone-mail-header">
+									<div class="cellPhone-mail-date">11h11</div>
+									<div class="cellPhone-mail-sender">Test</div>
+									
+								</div>
+								<div class="cellPhone-mail-content">test</div> -->
+							</div>
+						</div>
+						
+
+					</div>
+
+					<div id="cellPhone-mails2-page" class="cellPhone-page">
+						<div id="cellPhone-mail2-menu">
+							<img id = "cellPhone-mails-arrow" src="src/android-arrow-back-white.png"/>
+						</div>
+						<div id="cellPhone-mail2-container">
+
+							<div id="cellPhone-mail2-object">
+								URGENT !!!
+							</div>
+								<div id="cellPhone-mail2-sender" title="(Sebastien.canard@telecom-paris.fr)">
+									Sébastien Canard
+								</div>
+							
+							<div id="cellPhone-mail2-date">
+								11:11
+							</div>
+
+							<div id="cellPhone-mail2-dest" title ="(gaspard.Guillemaut@orange.fr)">
+								À Gaspard Guillemaut
+							</div>
+							<div id="cellPhone-mail2-content">
+								Bonjour, je me permet de vous envoyer ce dernier message : La deadline était hier, et je n'ai toujours pas reçu votre rendu. Pouvez vous s'il vous plait me l'envoyer ?
+								<br>Bonne journée.
+							</div>
+
+							<div id="cellPhone-mail2-link">
+
+							</div>
+							
+						</div>
+					</div>
+
+					<div id="cellPhone-firefox1-page" class="cellPhone-page">
+						<div id="cellPhone-firefox1-header">
+							<div id="cellPhone-firefox-adress">
+								test
+							</div>
+						</div>
+						<div id="cellPhone-firefox1-body"></div>
+
+					</div>
+
+
+					<div id="cellPhone-fichiers1-page" class="cellPhone-page"></div>
+
+					<div id="cellPhone-leMonde1-page" class="cellPhone-page"></div>
+					<div id="cellPhone-primeVideo1-page" class="cellPhone-page"></div>
+					<div id="cellPhone-bnpParibas1-page" class="cellPhone-page"></div>
+
+					<div id="cellPhone-whatsapp1-page" class="cellPhone-page">
+
+						<div id="cellPhone-whatsapp1-header">
+							<span>Whatsapp</span>
+
+							<div class="cellPhone-messageapp-writing-zone" id="cellPhone-AI">
+								<span>Demander à Meta IA</span>
+							</div>
+						</div>
+						<div id="cellPhone-whatsapp-zone">
+							
+						</div>
+					</div>
+
+					<div id="cellPhone-whatsapp2-page" class="cellPhone-page">
+						<div id="cellPhone-whatsapp2-header">
+							<img src="src/android-arrow-back-white.png" class="cellPhone-SMS-img cellPhone-messageapp-img can_click" id="cellPhone-whatsapp2-back"/>
+							<img src="src/profile.jpg" class="cellPhone-SMS-img cellPhone-messageapp-img"/>
+							<div id="cellPhone-whatsapp2-contact">TEST</div>
+							<div id="cellPhone-whatsapp2-conv" class="hidden"></div>
+						</div>
+
+						<div id="cellPhone-whatsapp2-zone">
+
+						</div>
+
+						<div class="cellPhone-messageapp-footer">
+							<div id ="cellPhone-whatsapp-writing-zone" class="cellPhone-messageapp-writing-zone">
+								<span>Répondre</span>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div id="cellPhone-tinder1-page" class="cellPhone-page">
+
+						<div id="cellPhone-tinder1-header">
+							<span>Tinder</span>
+						</div>
+						<div id="cellPhone-tinder-zone">
+							
+						</div>
+					</div>
+
+					<div id="cellPhone-tinder2-page" class="cellPhone-page">
+						<div id="cellPhone-tinder2-header">
+							<img src="src/android-arrow-back-white.png" class="cellPhone-SMS-img cellPhone-messageapp-img can_click" id="cellPhone-tinder2-back"/>
+							<img src="src/profile.jpg" class="cellPhone-SMS-img cellPhone-messageapp-img"/>
+							<div id="cellPhone-tinder2-contact">TEST</div>
+							<div id="cellPhone-tinder2-conv" class="hidden"></div>
+						</div>
+
+						<div id="cellPhone-tinder2-zone">
+
+						</div>
+
+						<div class="cellPhone-messageapp-footer">
+							<div id="cellPhone-tinder-writing-zone" class="cellPhone-messageapp-writing-zone">
+								<span>Répondre</span>
+							</div>
+						</div>
+
+					</div>
+
+					<div id="cellPhone-infos1-page" class="cellPhone-page">
+						<h2>Informations</h2>
+
+						<div class="cellPhone-info"  id="cellPhone-info1"> -> Vous (Gaspard Guillemaut)</div>
+						<div class="cellPhone-info"  id="cellPhone-info2"> -> Hélène</div>
+						<div class="cellPhone-info"  id="cellPhone-info3"> -> Tom (Votre fils)</div>
+					</div>
+
+					
+
+					
+					
+				</div>
+				<div id="cellPhone-menu">
+
+					<div id="cellPhone-left">
+						<img src="src/icons8-menu.svg"/>
+					</div>
+					<div id="cellPhone-home">
+						<img src="src/icons8-home.png">
+					</div>
+
+					<div id="cellPhone-back">
+						<img src="src/back-arrow.svg"/>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		<div id="screen-left">
+			<div id="cellPhone-left-container">
+				<div id="quest-container">
+				</div>
+				<button id="cellPhone-call-button">Reprendre l'appel</button>
+				<br>
+				<br>
+				<button id="cellPhone-end-game-button">Terminer le jeu</button>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,75 @@
+fr:
+  nav:
+    home: "Accueil"
+    research: "Recherche"
+    teaching: "Enseignement"
+  home:
+    role: "Professeur à Télécom Paris"
+    contact: "Contact"
+    switch_lang: "EN"
+    switch_lang_url: "/en/"
+  research:
+    title: "Recherche"
+    intro_title: "Thèmes de recherche"
+    students_title: "Doctorants encadrés"
+    students_current: "Doctorants actuels"
+    students_past: "Anciens doctorants"
+    publications_title: "Publications récentes"
+    publications_all: "Liste complète (DBLP)"
+    projects_title: "Projets de recherche"
+    tabs:
+      overview: "Vue d'ensemble"
+      students: "Doctorants"
+      publications: "Publications"
+      projects: "Projets"
+      misc: "Divers"
+  teaching:
+    title: "Enseignement"
+    role_title: "Responsabilités pédagogiques"
+    courses_title: "Cours dispensés"
+    projects_title: "Projets étudiants encadrés"
+    projects_intro: "Exemples de projets *Artishow* sur la pédagogie de la cybersécurité, dans la continuité du projet CYBERCRYPT mené chez Orange."
+    tabs:
+      overview: "Vue d'ensemble"
+      courses: "Cours"
+      projects: "Projets étudiants"
+  footer:
+    made_with: "Site conçu avec Jekyll, hébergé sur GitHub Pages."
+
+en:
+  nav:
+    home: "Home"
+    research: "Research"
+    teaching: "Teaching"
+  home:
+    role: "Professor at Télécom Paris"
+    contact: "Contact"
+    switch_lang: "FR"
+    switch_lang_url: "/"
+  research:
+    title: "Research"
+    intro_title: "Research topics"
+    students_title: "PhD students"
+    students_current: "Current PhD students"
+    students_past: "Former PhD students"
+    publications_title: "Recent publications"
+    publications_all: "Full list (DBLP)"
+    projects_title: "Research projects"
+    tabs:
+      overview: "Overview"
+      students: "PhD students"
+      publications: "Publications"
+      projects: "Projects"
+      misc: "Other"
+  teaching:
+    title: "Teaching"
+    role_title: "Academic responsibilities"
+    courses_title: "Courses taught"
+    projects_title: "Student projects supervised"
+    projects_intro: "Examples of *Artishow* projects on cybersecurity education, following on from the CYBERCRYPT project led while at Orange."
+    tabs:
+      overview: "Overview"
+      courses: "Courses"
+      projects: "Student projects"
+  footer:
+    made_with: "Built with Jekyll, hosted on GitHub Pages."

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="fake_news.css">
+    <link rel="icon" type="image/x-icon" href="images/tp_logo.png">
+    <title>Fake News</title>
+    <script src="fake_news.js"></script>
+    <div id="pageTitle">Fake news et bonnes pratiques</div>
+</head>
+
+<body>
+    <div id="h00">
+        <div>
+            <br>
+        </div>
+    </div>
+    <a id=return href="accueil.html">
+        <img id=return src="images/go_home_hollow.svg"><br>
+    </a>
+    <div class="div"> <h1> Premier exemple</h1> </div>
+    <div class="div" id="div1">
+        <p id="texte"> <a href="https://youtu.be/cQ54GDm1eL0">Cette vidéo</a> a plus de 8 ans. Depuis, de nouvelles technologies ont émergé comme par exemple l'IA générative. 
+            Les moyens de propagation des informations et les habitudes des utilisateurs ont évolué créant un environnement propice au développement des fake news.</p>
+    </div>
+    <br>
+
+    <div class="div"> 
+    <h1> Comment se propage une fake news ? </h1>
+        <p> Pour maximiser la viralité de son intox, le créateur peut jouer sur différents leviers comme les émotions, la polarisation ou la conspiration...</p> 
+        <img id="propagation_fake_news" src="images/fake_news.png">
+        <p> Trois principes sont à détailler : </p>
+        <ul>
+            <li> les social bots : ils sont programmés pour liker, commenter et repartager la fake news afin de lui donner de la crédibilité et de la visibilité</li>
+            <li> les chambres d'écho : ce sont des environnements où la fake news va prendre de l'ampleur car ils regroupent un ensemble d'utilistaeurs partageant des
+                opinions et intérêts similaires
+            </li>
+            <li> la double-circulation : un paradoxe puisque republier une fake news pour alerter génère en réalité aussi une augmentation de la visibilité de celle-ci</li>
+        </ul>
+        <p class="le_saviez_vous"> Le saviez-vous ? Selon l'IMT, les fake news se porpagent en moyenne 6 fois plus vite que les vraies infos. </p>
+        <p class="pour_mieux_comprendre"> Pour mieux comprendre : mettez vous à la place d'un créateur de fake news avec le jeu informatif <a href="https://www.getbadnews.com/en">Bad News</a></p>
+    </div>
+    <br>
+
+    <div class="div">
+    <h1> Images générées par IA</h1>
+        <p> Vous trouverez une série de 4 images à chaque fois, répondez vrai si vous pensez que l'image a été générée par IA.</p>
+         <img id="activity" src="images/activity0.jpeg">
+         <div class="Button">
+            <button class="swapButton" onclick="changeImg(-1)"> ← </button>
+            <button class="checkButton" onclick="checkImg(true)"> IA </button>
+            <button class="checkButton" onclick="checkImg(false)"> Réel </button>
+            <button class="swapButton" onclick="changeImg(1)"> → </button>
+         </div>
+         <div class="center"><p id="text"></p></div>
+         <p> Je ne sais pas à quel point vous avez réussi à démêler le vrai du faux mais personnellement les images générées par IA du mariage de Zendaya et Tom Holland m'ont particulièrement bluffée.</p>
+
+
+        <p id="tips"> TIPS : quelques clés pour déterminer si une photo a été générée par IA </p>
+        <ul>
+            <li> Chercher un logo attestant de l'utilisation de l'IA</li>
+            <li> Attention aux photos "trop" parfaites : chercher des incohérences notamment avec le contexte de la photo</li>
+            <li> Faire attention aux petits détails (grain de peau, froissage des vêtements, mèches de cheveux, accessoire, anatomie...)</li>
+            <li> Faire attention aux respects de la perspective (point de fuite...)</li>
+            <li> Ne pas se faire avoir dans l'autre sens en pensant que tout est IA, la retouche photo existe toujours ! </li>
+        </ul>
+
+        <p class="le_saviez_vous"> Selon une étude de 2025 se basant sur <a href="https://www.realornotquiz.com">ce test</a>, les gens ont en moyenne 62% de bonne réponse sur la détection d'image générée par IA. </p>
+    </div>
+    <br>
+
+    <div class="div">
+        <h1 class="dodont"> DO/DON'T </h1>
+        <div class="do_dont_container">
+            <div class="doDiv"> <b>DO</b>
+                <ul class="doLi">
+                <li> Vérifier les sources (site de confiance ? vrai compte ? regarder les réactions en commentaire...)</li>
+                <li> Croiser les sources </li> 
+                <li> Faire particulièrement attention aux "posts à sensation" </li>
+                <li> Utiliser un site de vérification</li>
+                <li> Signaler les posts qui vous semblent suspects </li>
+                </ul>
+            </div>
+            <br>
+            <div class="dontDiv"> <b>DON'T</b>
+                <ul class="dontLi">
+                    <li> Ne pas repartager sans s'être interrogé sur la fiabilité des sources</li>
+                    <li> Ne pas non plus tomber dans une forme de paranoïa </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>

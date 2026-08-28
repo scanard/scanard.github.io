@@ -1,0 +1,70 @@
+html {
+    background-color: #09093f;
+    color: white;
+
+    width: 99%;
+    overflow: auto;
+}
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: #1d1d70;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #cc0000;
+    border-width: 6px;
+    border-radius: 40px;
+    border-style: solid;
+    width: 100%;
+}
+
+#return {
+    width: 100px;
+    filter: invert(0.5);
+}
+
+#start {
+    background-color: #aaaaaa11;
+    opacity: 0.95;
+}
+
+#v {
+    background-color: #44bb44;
+    color: #006600;
+}
+
+#f {
+    background-color: #bb4444;
+    color: #660000;
+}
+
+#ex {
+    width: 45%;
+    opacity: 1.0;
+}
+
+#f1 {width: 14%;}  #f1:hover {opacity:0.5;}
+#t1 {width: 14%;}  #t1:hover {opacity:0.5;}
+
+#f2 {width: 14%;}  #f2:hover {opacity:0.5;}
+#t2 {width: 14%;}  #t2:hover {opacity:0.5;}
+
+#f3 {width: 14%;}  #f3:hover {opacity:0.5;}
+#t3 {width: 14%;}  #t3:hover {opacity:0.5;}
+
+#f4 {width: 14%;}  #f4:hover {opacity:0.5;}
+#t4 {width: 14%;}  #t4:hover {opacity:0.5;}
+
+#f5 {width: 14%;}  #f5:hover {opacity:0.5;}
+#t5 {width: 14%;}  #t5:hover {opacity:0.5;}
+
+#f6 {width: 14%;}  #f6:hover {opacity:0.5;}
+#t6 {width: 14%;}  #t6:hover {opacity:0.5;}
+
+#f7 {width: 14%;}  #f7:hover {opacity:0.5;}
+#t7 {width: 14%;}  #t7:hover {opacity:0.5;}
+
+#f8 {width: 14%;}  #f8:hover {opacity:0.5;}
+#t8 {width: 14%;}  #t8:hover {opacity:0.5;}

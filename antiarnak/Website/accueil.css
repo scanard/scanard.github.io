@@ -1,0 +1,206 @@
+:root {
+    --swidth: 100vw;
+}
+
+a {
+    color:black;
+}
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: #333333;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #cc0000;
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+body {
+    background-color: #555555;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#lore { 
+  position: relative; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlore {
+    position: relative;
+    color: #000000;
+}
+
+h1 {
+    text-decoration: solid;
+    text-align: center;
+    background-color: #cccccc;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 10px;
+}
+
+#h1 {
+    background-color: #aaaaaa;
+    opacity: 0.98;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#h2 {
+    background-color: #aaaaaa;
+    opacity: 0.98;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#h3 {
+    background-color: #aaaaaa;
+    opacity: 0.98;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#h4 {
+    background-color: #aaaaaa;
+    opacity: 0.98;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 45vh;
+}
+
+#h4 button {
+  text-shadow: 
+    2px 2px 0px #fff, 
+    -2px -2px 0px #fff, 
+    2px -2px 0px #fff, 
+    -2px 2px 0px #fff;
+}
+
+#stats {
+    width: 49%;
+}
+
+#buttonF {
+    transition-duration: 0.4s;
+    width: 23%;
+    aspect-ratio: 1.4;
+    font-size: 4vw;
+    background: url("images/phishingImg.png");
+    background-size: 100% 100%;
+    border-radius: 10%;
+    position: absolute;
+    left: 1%;
+}
+
+#buttonF:hover {
+    background-color: #4CAF50;
+    color: #bbaa33;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#buttonU {
+    transition-duration: 0.4s;
+    width: 23%;
+    aspect-ratio: 1.4;
+    font-size: 4vw;
+    background: url("images/usurpationimg.png");
+    background-size: 100% 100%;
+    border-radius: 10%;
+    position: absolute;
+    left: 26%;
+}
+
+#buttonU:hover {
+    background-color: #4CAF50;
+    color: red;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#buttonM {
+    transition-duration: 0.4s;
+    width: 23%;
+    aspect-ratio: 1.4;
+    font-size: 4vw;
+    background: url("images/faknewsimg.png");
+    background-size: 100% 100%;
+    border-radius: 10%;
+    position: absolute;
+    left: 51%;
+}
+
+#buttonM:hover {
+    background-color: #4CAF50;
+    color: #00aaaa;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#buttonS {
+    transition-duration: 0.4s;
+    width: 23%;
+    aspect-ratio: 1.4;
+    font-size: 4vw;
+    background: url("images/fakewebsiteimg.svg");
+    background-size: 97% 103%;
+    background-color: #555555;
+    border-radius: 10%;
+    position: absolute;
+    left: 76%;
+}
+
+#buttonS:hover {
+    background-color: #4CAF50;
+    color: #aa1177;
+    box-shadow:0 16px 32px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#defRect:hover {
+    background-color: #bb6666;
+}
+
+#after_arn {
+    top: calc(-500 * calc(var(--swidth) / 1980));;
+    background-color: #aaaaaa;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#word {
+    display: inline;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* TODO
+    - revoir police du texte vectoriel
+    - check timeline pour copyright
+    - revoir dernière section
+    - (si temps) check format téléphone
+*/

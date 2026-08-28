@@ -1,0 +1,36 @@
+title: "Sébastien Canard"
+description: "Site personnel de recherche en cryptographie et cybersécurité, et d'enseignement à Télécom Paris"
+url: "https://scanard.github.io"
+baseurl: ""
+
+author:
+  name: "Sébastien Canard"
+  email: "sebastien.canard@telecom-paris.fr"
+  linkedin: "https://www.linkedin.com/in/canardsebastien/"
+
+# Liens institutionnels réutilisés sur toutes les pages
+institution:
+  team: "https://www.telecom-paris.fr/fr/recherche/labos/traitement-information-ltci/equipes/cybersecurite-cryptographie"
+  department: "https://www.telecom-paris.fr/fr/ecole/departements-enseignement-recherche/informatique-reseaux/"
+  lab: "https://www.telecom-paris.fr/fr/recherche/labos/traitement-information-ltci"
+  dblp: "https://dblp.org/pid/51/2620.html"
+
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "fr"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

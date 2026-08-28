@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html onclick="textbox.click()">
+
+	<head>
+		<title>Demo : TextBox</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="TextBox.css"/>
+		<script src="TextBox.js"></script>
+		<script> window.onload = function(){Initialisation();}
+
+			var l1 = {
+				message: ["Feuille ! J'ai gagné"],
+				choix : ["Rooh"],
+				resultats : ["textbox.ecrire_dialogue(dialogue,0)"]
+			}
+			var l2 = {
+				message: ["Ciseaux ! J'ai gagné"],
+				choix : ["Rooh"],
+				resultats : ["textbox.ecrire_dialogue(dialogue,0)"]
+			}
+			var l3 = {
+				message: ["Pierre ! J'ai gagné"],
+				choix : ["Rooh"],
+				resultats : ["textbox.ecrire_dialogue(dialogue,0)"]
+			}
+			var l4 = {
+				message: ["Mouahaha"],
+				choix : []
+			}
+			var dialogue = {
+				message : ["Pierre, Feuille...","Ciseaux"],
+				choix : ["Pierre", "Feuille", "Ciseaux", "J'abandonne"],
+				resultats : ["textbox.ecrire_dialogue(l1,0)","textbox.ecrire_dialogue(l2,0)","textbox.ecrire_dialogue(l3,0)", "textbox.ecrire_dialogue(l4,0)"],
+			}
+
+
+
+			function Initialisation()
+			{
+				textbox.ecrire_dialogue(dialogue,0)
+			}
+		</script>
+	</head>
+
+	<body >
+	
+		<header>
+			<h1>Demo : TextBox</h1>
+		</header>
+		<div id = "textBox-container">
+			<div id="textBox">
+				<div id="textBox-text">
+					
+				</div>
+				<div id="textBox-choices">
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

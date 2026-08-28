@@ -1,0 +1,211 @@
+#h0 {
+    background-image: url("images/phishing_image.png");
+    background-attachment:fixed;
+    background-size: 100%;
+    background-color: #999999;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: rgb(60, 60, 170);
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #cc0000;
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+a{
+    color:black;
+}
+
+body {
+    background-color: rgb(58, 148, 178);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#return {
+    width: 100px;
+    color: white;
+}
+
+
+h1 {
+    border: 3px solid #cccccc;
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(78, 168, 198);
+    text-align: center;
+
+    border-color: rgb(58, 75, 124);
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+
+#explPhishing {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+#im1 {
+    width: 30%;
+    height: 30%;
+}
+
+#im2 {
+    width: 30%;
+    height: 30%;
+}
+
+#im3 {
+    width: 30%;
+    height: 30%;
+}
+
+#divStatPhishing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#statPhishing {
+    width:20%;
+}
+
+
+#reconnaissancePhishing {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+#imReco {
+    width:35%;
+}
+
+#victPhishing {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#imSignalSpam {
+    height:100%;
+}
+
+#imPhisingInitiative {
+    height:100%;
+}
+
+.imRes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+    position: relative;
+}
+
+#divMiniature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgWhatScam {
+    width: 20%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.banner p {
+    font-size: 19px;
+    text-align: justify;
+    color: black;
+    margin-top: -10px;
+    margin-right: 20%;
+}
+
+.banner img {
+    float: right; 
+    margin: 15px;
+    position: relative;
+    right: -10%;
+}
+
+.banner span {
+    padding-top: 50px;
+    font-size: 17px;
+    vertical-align: top;
+}
+
+.banner .ban2 span {
+    padding-top: 50px;
+    font-size: 17px;
+    vertical-align:top;
+}
+
+#sec3 {
+    position: absolute;
+    left: 5px;
+}
+
+.dodont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #3333ff;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #0000aa;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.doDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #44bb44;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #248324;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.dontDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #bb3333;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #aa0000;
+    border-width: 3px;
+    border-style: solid;
+}
+.doLi{
+    text-align: left;
+}
+
+.dontLi{
+    text-align: left;
+}
+
+/*
+    - DODONT
+    - Sources, et décaler toutes les sources qu'on a.
+*/

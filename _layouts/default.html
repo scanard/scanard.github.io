@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+{% include head.html %}
+<body>
+  {% include nav.html %}
+  {% include subnav.html %}
+  <main class="wrap page-{{ page.nav }}">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>

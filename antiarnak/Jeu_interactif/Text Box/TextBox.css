@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+:root{
+    --textBox-color:  rgb(64, 59, 59);
+}
+
+
+
+#textBox-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    z-index:500;
+ 
+
+}
+
+#textBox{
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: var(--textBox-color);
+    color: white;
+    width:50%;
+    height: 100px;
+    padding: 10px;
+    text-wrap: wrap;
+    display: none;
+    overflow: scroll;
+}
+    
+
+#textBox-caché, #textBox-visible{
+
+    border:black solid 2px;
+    width:fit-content;
+    height: fit-content;
+    margin: 0px;
+}
+
+#textBox-text{
+    width:100%;
+    user-select: none;
+}
+
+.textBox-choix{
+    margin-top: 10px;
+    cursor: pointer;
+    width:fit-content;
+    user-select: none;
+}
+
+#textBox-choices{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: flex-start;
+    /*justify-content: space-around;*/
+    flex-flow: column wrap;
+    max-height: 100%;
+    user-select: none;
+}

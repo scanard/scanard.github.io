@@ -1,0 +1,33 @@
+# "url" est optionnel : si absent, le nom du projet s'affiche sans lien (en attendant le lien).
+# "url" peut être un chemin relatif (site self-hosté, ex: "/enigma-lego/index.html")
+# ou une adresse externe complète (contient "http").
+
+- name: "Comment expliquer la cryptographie moderne aux enfants"
+  authors: "Erwan, Ilan, Julie et Yohann"
+  year: 2026
+
+- name: "AntiArnak"
+  url: "/antiarnak/homepage.html"
+  authors: "Alexandre, Arsène, Héloïse, Octave et Rémi"
+  year: 2026
+
+- name: "Jeux en cybersécurité"
+  authors: "Lise, Sarah, Sylvia et Tara"
+  year: 2025
+
+- name: "La machine Enigma en légo"
+  url: "/enigma-lego/index.html"
+  authors: "Ambre, Élisa, Ghislain, Gwendal et Mao"
+  year: 2025
+
+- name: "Projet K.A.M"
+  url: "/projetKAM/Accueil.html"
+  authors: "Anissa, Kenzo et Myriam"
+  year: 2024
+
+- name: "CryptoQuest"
+  url: "/cryptoquest/main.html"
+  authors: "Jennifer, Leïla, Lyla, Nathan, Sarah et Vivien"
+  year: 2024
+
+# Ajoute ici les prochains projets Artishow encadrés.

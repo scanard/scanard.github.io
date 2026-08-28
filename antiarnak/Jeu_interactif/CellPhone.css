@@ -1,0 +1,665 @@
+body{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+:root{
+    --cellPhone-color:  rgb(64, 59, 59);
+
+    --cellPhone-screen-width : 300px;
+    --cellPhone-screen-height : 600px;
+
+
+    --cellPhone-dark1: rgb(15,20,26);
+    --cellPhone-dark2: rgb(27, 32, 38);
+
+    --cellPhone-gray: darkgray;
+}
+
+
+
+#cellPhone-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5%;
+    height: 630px;
+
+}
+
+#cellPhone{
+    border: black solid 2px;
+    border-radius: 25px;
+    background-color: var(--cellPhone-color);
+    color: white;
+    width:300px;
+    height: 100%;
+    padding: 10px;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cellPhone-screen{
+    background-color: gray;
+    width:var(--cellPhone-screen-width);
+    height:var(--cellPhone-screen-height);
+    border: black solid 2px;
+    border-radius: 25px;
+    margin-top: 1px;
+}
+
+#cellPhone-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+#cellPhone-home, #cellPhone-back, #cellPhone-left{
+    background-color: var(--cellPhone-color);
+    width:25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#cellPhone-home-page{
+    background-image: url("src/wallpaper.jpg");
+    background-size: var(--cellPhone-screen-width) var(--cellPhone-screen-height);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cellPhone-page{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: blue;
+    
+}
+
+.cellPhone-app-icon{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 13px;
+    user-select: none;
+}
+
+.cellPhone-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#cellPhone-home-app-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-left: 25px;
+}
+
+.cellPhone-app-name{
+    text-align: center;
+    font-size: 0.9em;
+    cursor: default;
+    user-select: none;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#cellPhone-mails1-page, #cellPhone-mails2-page, #cellPhone-SMS1-page, #cellPhone-SMS2-page{
+    align-items: center;
+    background-color: var(--cellPhone-dark2);
+    overflow-y:scroll;
+    flex-direction: column;
+}
+
+.cellPhone-mail-container{
+    width: 95%;
+    min-height: 95px;
+    background-color: var(--cellPhone-dark1);
+    border-radius: 3px;
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    user-select: none;
+    cursor: pointer;
+
+
+}
+
+.cellPhone-mail-content{
+    overflow:hidden;
+    height: 20px;
+}
+
+#cellPhone-mail-title{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.cellPhone-mail-sender, .cellPhone-mail-object{
+    margin-bottom: 5px;
+    
+}
+
+body{
+    scrollbar-width: 0px;
+}
+
+.cellPhone-mail-header{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cellPhone-mail-zone{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#cellPhone-mail2-container{
+    background-color: var(--cellPhone-dark1);
+    width:95%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cellPhone-mail2-menu{
+    height: 50px;
+    justify-content: left;
+    width: 100%;
+}
+
+#cellPhone-mail2-object{
+    height: 50px;
+    font-size: 22px;
+}
+
+#cellPhone-mail2-sender{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#cellPhone-mail2-date{
+    font-size: 12px;
+}
+#cellPhone-mail2-dest{
+    font-size: 14px;
+    height: 30px;
+}
+
+#cellPhone-mail2-content{
+    font-size: 17px;
+}
+
+#cellPhone-mails-arrow{
+    width:50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#cellPhone-messageapp-zone{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: var(--cellPhone-dark1);
+}
+
+.cellPhone-messageapp-container{
+    display: flex;
+    justify-content: space-between;
+    width: var(--cellPhone-screen-width);
+    height: 65px;
+    margin-bottom: 5px;
+    background-color: var(--cellPhone-dark1);
+    
+    font-family: 'Courier New', Courier, monospace;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    
+    
+    
+}
+
+.cellPhone-messageapp-sender{
+    font-weight: bold;
+}
+
+.cellPhone-messageapp-date{
+    font-size: 15px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.cellPhone-messageapp-content{
+    font-size: 15px;
+    overflow: hidden;
+    
+}
+
+.cellPhone-messageapp-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cellPhone-messageapp-img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.cellPhone-messageapp-container2{
+    width: 100%;
+}
+
+.cellPhone-messageapp-new-message{
+    background-color: darkorange;
+    border-radius: 25px;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+
+    font-size: 15px;
+}
+
+#cellPhone-SMS1-title{
+    margin-top: 100px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#cellPhone-SMS2-header, #cellPhone-whatsapp2-header, #cellPhone-tinder2-header{
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    background-color: var(--cellPhone-dark1);
+    
+}
+
+
+.cellPhone-SMS2-message1{
+    display: flex;
+    margin-top: 10px;
+
+}
+.cellPhone-SMS2-content{
+    padding-left: 10px;
+    background-color:gray ;
+    border-radius: 10px;
+    max-width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cellPhone-SMS2-date-container{
+    position: relative;
+    width: 40px;
+}
+
+
+.cellPhone-SMS2-date{
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    color:var(--cellPhone-gray);
+    font-family:Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+    
+
+.cellPhone-SMS2-message2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+
+}
+
+
+.cellPhone-SMS2-message2 .cellPhone-SMS2-content{
+    background-color: rgb(91, 206, 167);
+}
+
+.cellPhone-SMS2-date-change{
+    width: 100%;
+    text-align: center;
+    color:var(--cellPhone-gray);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#cellPhone-appel1-page div{
+    border-radius: 2px;
+    background-color:white;
+    margin: 1px;
+    background-image:url(src/icons/Appels.png);
+    background-size: 9% 90%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+#cellPhone-appel1-page{
+    
+    flex-direction:column;
+    background-color: black;
+}
+
+#cellPhone-appel2-page{
+    flex-direction: column;
+    background-color: white;
+}
+
+#appel2-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+#name_caller{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+#mute{
+    width: 60px;
+    height: 80px;
+}
+
+#speaker{
+    width: 60px;
+    height: 80px;
+}
+
+#hang-up-call{
+    width: 60px;
+    height: 80px;
+}
+
+.can_click{
+    cursor: pointer;
+}
+
+.cellPhone-messageapp-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    font-weight: bold;
+    width: 100%;
+    background-color: var(--cellPhone-dark1);
+    margin-top: auto;
+    border-radius: 20px;
+}
+
+.cellPhone-messageapp-writing-zone {
+    width : 80%;
+    height : 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: text;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    user-select: none;
+}
+
+#cellPhone-whatsapp1-page, #cellPhone-whatsapp2-page, #cellPhone-tinder1-page, #cellPhone-tinder2-page{
+    background-color: var(--cellPhone-dark2);
+    flex-direction: column;
+    overflow: scroll;
+}
+
+#cellPhone-whatsapp1-header, #cellPhone-tinder1-header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-style: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+#cellPhone-notification{
+    display:none;
+    background-color:white;
+    width: var(--cellPhone-screen-width);
+    height:80px;
+    position: absolute;
+    border-top:10px;
+    border-radius: 20px;  
+    z-index: 10;
+}
+
+#cellPhone-notification:hover{
+    background-color:#cccccc;
+}
+
+#app-icon-notification{
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left:5px;
+}
+
+#notif-sender{
+    font-size: 17px;
+    color: black ;
+    margin-left: 10px;
+    margin-top: 25px;
+    width:200px;
+    height:19px;
+    overflow: hidden;
+}
+
+#notif-content{
+    font-size: 12px;
+    color:black;
+    margin-left: -200px;
+    position: relative;
+    margin-top: 50px;
+    width:200px;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
+}
+
+#cellPhone-infos1-page
+{
+    background-color: var(--cellPhone-dark2);
+    flex-direction: column;
+}
+
+.cellPhone-info{
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+
+#cellPhone-entering-call{
+    display:none;
+    background-color:white;
+    width: var(--cellPhone-screen-width);
+    height:80px;
+    position: absolute;
+    border-top:10px;
+    border-radius: 20px;  
+    z-index: 10;
+}
+
+#pick_up_img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+#hang_up_img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 200px;
+    position: absolute;
+}
+
+#caller-num{
+    font-size: 17px;
+    color:black;
+    position: absolute;
+    margin-left: 90px;
+}
+
+#cellPhone-tinder1-page{
+    background-color: black
+}
+
+
+
+#cellPhone-tinder2-zone{
+    background-color: #3d0141;
+}
+
+#cellPhone-tinder2-zone .cellPhone-SMS2-message1 .cellPhone-SMS2-content {
+    background-color: #632765;
+}
+
+#cellPhone-tinder2-zone .cellPhone-SMS2-message2 .cellPhone-SMS2-content{
+    background-color: #ff2184;
+}
+
+#cellPhone-tinder2-header{
+    background-color: rgb(79, 10, 55);
+}
+
+#cellPhone-firefox1-header{
+    width: 100%;
+    background-color: gray;
+    height: 50px;
+}
+
+#cellPhone-firefox-adress{
+    height : 30px;
+    background-color: white;
+    width:90%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: text;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+#quest-container{
+    width: 400px;
+    height: 150px;
+    background-color: #DEB887;
+    border: #4f1e37 8px solid;
+    margin-top: 100px;
+    color: darkred;
+}
+
+#screen-right, #screen-left{
+    width: 33%;
+}
+
+body{
+    display: flex;
+    flex-direction: line;
+    justify-content: space-around;
+}
+
+.cellPhone-link{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+#screen-left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cellPhone-call-button{
+    width: 100px;
+    margin-left: 100px;
+    display: none;
+}
+
+#cellPhone-end-game-button{
+    width: 100px;
+    margin-left: 100px;
+}
+
+#cellPhone-voicemail4, #cellPhone-end-container{
+    display: none;
+}
+
+#cellPhone-end-container{
+    background-color: #aea5a5;
+    width: 50%;
+    height: 100vh;
+    min-width: 600px;
+    color: black;
+    padding-left: 50px;
+    padding-right:50px;
+}

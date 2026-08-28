@@ -1,0 +1,142 @@
+body {
+    background-color: #999999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pageTitle {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: #555555;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-color: #cc0000;
+    border-width: 6px;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+#h00 {
+    background-image: url("images/illustration_titre_fake_news.jpeg");
+    background-attachment:fixed;
+    background-size: 100%;
+    background-color: #999999;
+
+    width: 100%;
+    height: 100%;
+    opacity: 3%;
+}
+
+#return {
+    width: 100px;
+    color: white;
+}
+
+.div {
+    background-color: #999999;
+    opacity: 0.98;
+}
+
+#text{
+    height: 256px;
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    background-color: gray;
+
+    border-color: #248324;
+    border-width: 4px;
+    border-radius: 20px;
+    border-style: solid;
+    width: 100%;
+    text-align: center;
+}
+
+#activity {
+    height: 512px;
+}
+
+#video {
+    position: relative;
+    height: 512px;
+    width: 50%;
+}
+
+#div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.dodont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    width: 100%;
+    text-align: center;
+    background-color: #3333ff;
+    opacity: 90%;
+    border-radius: 20px;
+    border-color: #0000aa;
+    border-width: 3px;
+    border-style: solid;
+}
+
+a {
+    color:black;
+}
+
+.doDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 48%;
+    text-align: center;
+    background-color: #44bb44;
+    opacity: 90%;
+    border-radius: 10px;
+    border-color: #248324;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.dontDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #bb3333;
+    opacity: 90%;
+    border-radius: 10px;
+    border-color: #aa0000;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.doLi
+    {
+        text-align: left;
+    }
+
+.dontLi
+    {
+        text-align: left;
+    }
+
+.Button
+    {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+
+    }
+
+.swapButton
+{
+    width:70px;
+    font-size: 20px;
+}
+
+.checkButton
+{
+    width:70px;
+    font-size: 20px;
+}

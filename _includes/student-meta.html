@@ -1,0 +1,15 @@
+{%- assign uni = include.student.university -%}
+{%- if page.lang == "en" -%}
+  {%- assign period = include.student.period_en -%}
+{%- else -%}
+  {%- assign period = include.student.period_fr -%}
+{%- endif -%}
+{%- capture meta -%}
+  {%- if uni and uni != "" -%}{{ uni }}{%- endif -%}
+  {%- if uni and uni != "" and period and period != "" %} · {% endif -%}
+  {%- if period and period != "" -%}{{ period }}{%- endif -%}
+{%- endcapture -%}
+{%- assign meta = meta | strip -%}
+{%- if meta != "" -%}
+<p class="meta">{{ meta }}</p>
+{%- endif -%}

@@ -1,0 +1,34 @@
+.box_debts1{
+    border: groove rgb(104, 0, 0) 1vw;
+    padding : 0.5vw;
+}
+
+.box_debts2{
+    border: double rgb(255, 0, 0) 1vw;
+    padding : 0.5vw;
+}
+
+.debt{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.prix{
+    font-size: 2vw;
+    color: rgb(204, 0, 0);
+    grid-column: 1;
+}
+
+.intitule{
+    font-size: 2vw;
+    grid-column: 2;
+}
+
+.server{
+    padding : 2vw;
+}
+
+.line{
+    background-color: red;
+    padding : 0.25vw;
+}

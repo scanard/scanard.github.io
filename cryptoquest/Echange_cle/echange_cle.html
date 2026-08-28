@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeu crypto</title>
+    <link rel="icon" href="/cryptoquest/img/image.png">
+    <link rel="stylesheet" href="/cryptoquest/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="Auteur" content="les bg">
+    <meta name="Description" content="jeu crypto">
+    <script src="/cryptoquest/main.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section id="Titre">
+            <div class="one">
+                <h1>Jeu web d'introduction à la cryptographie
+                    <br>
+                    <br>
+                    <span>J'ai perdu</span>
+                </h1>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/cryptoquest/main.html" title="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="" title="Bibliographie">Bibliographie</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/Scytale/scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cryptanalyse_cesar/cryptanalyse_cesar.html" title="Méthode et cryptanalyse de César">Méthode et cryptanalyse de César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vigenere/Vigenere.html" title="Chiffre de Vigenère">Chiffre de Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Grand_chiffre/grand_chiffre.html" title="Le grand chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Vernam/vernam.html" title="Vernam">Méthode de Vernam</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Man_in_the_middle/man_in_the_middle.html" title="Man in the middle">Attaque Man in the Middle</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Enigma/enigma.html" title="Machine Enigma">Machine Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Echange_cle/echange_cle.html" title="Principe de l'échange de clé">Principe de l'échange de clé</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Cle_publique/cle_publique.html" title="Clé publique">Clé publique</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/Certificat/certificat.html" title="Certificat">Principe de Certificat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" title="Chapitres">Chapitres</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Scytale/Scytale.html" title="Scytale">Scytale</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cesar/Cesar.html" title="Cesar">César</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Vigenere/Vigenere-chap.html" title="Vigenère">Vigenère</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/GrandChiffre/Chapitre-grandchiffre.html" title="Le Grand Chiffre">Le Grand Chiffre</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/enigma/enigma.html" title="Les Certificats">Enigma</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Cle_publique/Cle_publique.html" title="Les clés publiques">Les clés publiques</a>
+                        </li>
+                        <li>
+                            <a href="/cryptoquest/jeu-chapitres/Certificat/Chapitre-certificat.html" title="Les Certificats">Les Certificats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/cryptoquest/A_propos/A_propos.html" title="A_propos">A propos</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="Titre" class="two">
+            <div class="two">
+                <h2><a href="#">Principe de l'échange de clés</a></h2>
+            </div>
+        </section>
+        <section id="Article">
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                    <h3>Introduction</h3>
+                    Tout moyen de chiffrement se base sur l'échange de clé. Avec 1970, les clés étaient symétriques, c'est-à-dire que que la même clé était utilisée pour chiffrer et déchiffrer. C'était dangereux, car il fallait alors transmettre la clé de façon sécurisée, et celle-ci pouvait être interceptée.
+                </div>
+            </div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                    <h3>Exemples</h3>
+                    Exemples de clé pour quelques méthodes de chiffrement :<br>
+                    <div class="Articlesubsection">
+                    <ul>
+                        <li>méthode de la Scytale : diamètre du cylindre (peut être devinée rapidement)</li>
+                        <li>méthode de César : un nombre entre 1 et 26 (peut être devinée rapidement)</li>
+                        <li>méthode de Vignère : le mot utilisé en tant que clé (peut être trouvée par cryptanalyse)</li>
+                        <li>machine Enigma : le livre des clés par date (peut être - et a été - volée)</li>
+                    </ul></div>
+
+                    L'exemple le plus connu est celui d'Enigma, où le livre contenant une clé par jour a pu être volé. Si les livres ont été tous remplacés par la suite, ce vol a parmi aux services secrets polonais de créer les "bombes"(voir bibliographie sur Enigma), ancêtres de la machine d'Alan Turing qui permit de casser Enigma. 
+                </div>
+            </div>
+
+            <div class="Articlesection">
+                <div class="boxSection">
+                    <h3>Problématique</h3>
+                    Une clé doit répondre à une question de compromis : plus elle est longue, plus elle est sécurisée, mais moins elle est facilement utilisable. Dans un monde idéal, chaque clé ne devrait être utilisée qu'une seule fois, car c'est la répétition qui permet aux cryptanalystes de trouver la clé, et donc de découvrir les messages suivants (par exemple avec le chiffre de Vignère), ou le fonctionnement du chiffrement si celui-ci est secret (par exemple découvrir la 'clé' du Grand Chiffre, qui constitue le chiffre à proprement parler).<br>
+
+
+                    Deux façons de résoudre le problème : <br>
+                    <div class="Articlesubsection">
+                    <ul>
+                        <li>Utiliser une méthode de chiffrement qui ne requiert pas de clé, comme le code Navajo utilisé par les américains durant la Seconde Guerre Mondiale. Le code Navajo est simplement l'utilisation de personnes de la tribu Navajo parlant dans leur langue. Comme personne ne connaissait cette langue hormis les membres de la tribu, il était impossible pour quiconque de déchiffrer ce qui était dit. </li>
+                        <li>La méthode couramment utilisée aujourd'hui : le chiffrement avec clé publique.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <address>TELECOM Paris, 19 Pl. Marguerite Perey, 91120 Palaiseau 🦆</address>
+
+        <p id="clock"></p>
+        <br>
+    </footer>
+    <header>
+        <center>
+        Projet fait au sein de l'unité d'enseignement Proj104 de Télécom Paris
+        </center>
+    </header>
+</body>
+
+</html>

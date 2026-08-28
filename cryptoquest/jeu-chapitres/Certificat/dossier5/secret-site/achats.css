@@ -1,0 +1,51 @@
+.objet_en_vente{
+    background-image: url(stock.png);
+    background-size: 70%;
+    padding : 3vw;
+    background-color: white;
+    display : grid;
+    grid-template-columns: 20% 10% 30% 40%;
+    grid-template-rows: auto;
+    border: solid rgb(0, 0, 0) 1vw;
+}
+
+.image_obj_vente{
+    grid-column: 1;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    padding : 2vw;
+}
+
+.nom_obj{
+    grid-column: 3;
+    grid-row : 1;
+    padding : 0.5vw;
+    font-size : 2vw;
+    background-color: rgba(162, 66, 66, 0.7);
+}
+
+.description_obj{
+    grid-column: 4;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    padding : 0.5vw;
+    font-size : 2vw;
+}
+
+
+.prix_obj{
+    grid-column: 3;
+    padding : 0.5vw;
+    grid-row : 2;
+    font-size : 2vw;
+    color :rgb(139, 0, 0);
+}
+
+
+.ventes{
+    padding : 0vw;
+}
+
+.ecart{
+    padding : 5vw;
+}
