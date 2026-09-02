@@ -8,7 +8,7 @@ nav: home
 ---
 
 <div class="hero page-home">
-  <img class="hero-photo" src="{{ '/assets/images/sc.svg' | relative_url }}" alt="Photo de Sébastien Canard">
+  <img class="hero-photo" src="{{ '/assets/images/sc.jpg' | relative_url }}" alt="Photo de Sébastien Canard">
   <div class="hero-text">
     <h1>Sébastien Canard</h1>
     <p class="role">Professeur à Télécom Paris</p>
